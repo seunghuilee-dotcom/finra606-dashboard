@@ -1,0 +1,345 @@
+rank,broker_name,crd,pfof_equity_usd,pfof_options_usd,pfof_total_usd,options_mix_pct,market_order_pct,limit_order_pct,internalization_rate,top_internalizer,top_internalizer_pct,is_zero_pfof,is_abr,tags,note,xml_filename
+1,Charles Schwab,5393,91214812.86,116964318.23,208179131.09,56.2,25.2,65.3,100.0,CITADEL SECURITIES LLC,36.9,False,False,options_heavy|active_trader,,5393_606_NMS_2026_Q1_CHAS_V1_20260429.xml
+2,"Robinhood Securities, LLC",287900,54755019.08,119638868.18,174393887.26,68.6,40.9,51.3,100.0,CITADEL SECURITIES LLC,41.8,False,False,options_heavy|active_trader,,287900_606_NMS_2026_Q1_V1_20260430.xml
+3,Robinhood Financial LLC,165998,43804015.24,95711094.54,139515109.78,68.6,41.1,50.9,100.0,CITADEL SECURITIES LLC,41.8,False,False,options_heavy|active_trader,,165998_606_NMS_2026_Q1_V1_20260430.xml
+4,Morgan Stanley Smith Barney LLC,149777,29074725.25,28203470.02,57278195.27,49.2,53.4,39.3,100.0,Dash/IMC Financial Markets,35.7,False,False,options_heavy,,149777_606_NMS_2026_Q1_MSWM_V1_20260430.xml
+5,Webull Financial LLC,289063,14058665.75,27490758.36,41549424.11,66.2,18.5,68.9,100.0,CITADEL SECURITIES LLC,37.0,False,False,options_heavy|active_trader,,289063_606_NMS_2026_Q1_WBUL_V1_20260430.xml
+6,FIDELITY BROKERAGE SERVICES LLC,7784,-42754.0,25590455.0,25547701.0,100.2,52.1,44.4,100.0,Citadel Securities LLC,32.8,False,False,options_heavy,,7784_606_NMS_2026_Q1_V1_20260430.xml
+7,FUTU CLEARING INC.,298769,2866773.9,10390218.83,13256992.73,78.4,4.9,91.1,100.0,CITADEL SECURITIES LLC,39.9,False,False,options_heavy|active_trader,,298769_606_NMS_2026_Q1_FUTU_V1_20260429.xml
+8,APEX Clearing,13071,6476562.2,3870721.77,10347283.97,37.4,30.4,63.0,100.0,"Virtu Americas, LLC",33.9,False,False,active_trader,,13071_606_NMS_2026_Q1_APEX_V1_20260429.xml
+9,APEX Clearing,7320,6476562.2,3870721.77,10347283.97,37.4,30.4,63.0,100.0,"Virtu Americas, LLC",33.9,False,False,active_trader,,7320_606_NMS_2026_Q1_V1_20260430.xml
+10,Tradestation Securities,39473,3931306.25,4269709.17,8201015.42,52.1,33.9,43.1,100.0,"Citadel Securities, LLC",32.2,False,False,options_heavy,,39473_606_NMS_2026_Q1_TRAD_V1_20260423.xml
+11,Tastytrade Inc,277027,2567935.21,5121639.44,7689574.65,66.6,21.4,66.8,100.0,CITADEL SECURITIES LLC,41.2,False,False,options_heavy|active_trader,,277027_606_NMS_2026_Q1_TWTT_V1_20260430.xml
+12,Interactive Brokers,36418,-8598925.0,15517623.0,6918698.0,224.3,0.2,97.8,53.8,Nasdaq Stock Market,29.2,False,True,options_heavy|active_trader|abr,,36418_606_NMS_2026_Q1_V1_20260429.xml
+13,TradeUP Securities Inc,18483,4208159.54,2543277.8,6751437.34,37.7,0.4,91.4,100.0,CITADEL SECURITIES LLC,76.7,False,False,active_trader,,18483_606_NMS_2026_Q1_MRSC_V1_20260429.xml
+14,Alpaca Securities LLC,288202,4889087.92,1445291.4,6334379.32,22.8,57.7,37.4,100.0,Dash Financial,46.5,False,False,,,288202_606_NMS_2026_Q1_V1_20260429.xml
+15,"Tradier Brokerage, Inc.",104982,4166888.3,1262331.34,5429219.64,23.3,65.1,29.3,100.0,"Instinet, LLC",36.5,False,True,passive_retail|abr,,104982_606_NMS_2026_Q1_TBIS_V1_20260427.xml
+16,FIRSTRADE SECURITIES INC.,16843,943990.99,1398715.73,2342706.72,59.7,34.4,59.0,100.0,CITADEL SECURITIES LLC,60.9,False,False,options_heavy|active_trader,,16843_606_NMS_2026_Q1_FFSI_V1_20260429.xml
+17,"Atomic Vaults Securities, LLC",317194,378870.75,1817591.87,2196462.62,82.8,2.2,97.8,100.0,DASH,53.4,False,False,options_heavy|active_trader,,317194_606_NMS_2026_Q1_V1_20260426.xml
+18,"Spiderrock EXS, LLC",148743,0.0,2014096.24,2014096.24,100.0,0.0,100.0,39.9,NYSE ARCA OPTIONS,51.7,False,False,options_heavy|active_trader,,148743_606_NMS_2026_Q1_V1_20260428.xml
+19,RQD* Clearing LLC,134284,1927413.81,6380.21,1933794.02,0.3,42.6,53.1,100.0,Susquehanna Financial Group LLP,45.7,False,True,active_trader|abr,,134284_606_NMS_2026_Q1_V1_20260430.xml
+20,SOFI,151717,529449.5,601726.06,1131175.56,53.2,73.3,4.1,100.0,Dash Financial Technologies,25.8,False,False,options_heavy|passive_retail,,151717_606_NMS_2026_Q1_SOFI_V1_20260430.xml
+21,GTN Americas,315499,914739.01,149554.7,1064293.71,14.1,77.5,22.1,100.0,"Citadel Securities, LLC",38.1,False,False,passive_retail,,315499_606_NMS_2026_Q1_V2_20260506.xml
+22,Ally Invest Securities LLC,136131,590111.38,417148.5,1007259.88,41.4,25.9,66.1,100.0,"Wolverine Execution Services, LLC",34.7,False,False,options_heavy|active_trader,,136131_606_NMS_2026_Q1_ALLY_SELF_V2_20260430.xml
+23,TradeZero,282940,539837.66,14625.6,554463.26,2.6,13.3,50.3,100.0,Dash/IMC Financial Markets,67.5,False,False,active_trader,,282940_606_NMS_2026_Q1_ZERO_V1_20260430.xml
+24,Lime Trading Corp,11826,493899.38,21855.54,515754.92,4.2,17.2,75.2,100.0,Dash/IMC Financial Markets,39.8,False,False,active_trader,,11826_606_NMS_2026_Q1_SPCX_V1_20260429.xml
+25,"Stifel, Nicolaus & Co., Inc.",793,465565.16,0.0,465565.16,0.0,87.5,5.2,100.0,Citadel Execution Services,36.1,False,False,passive_retail,,793_606_NMS_2026_Q1_STFL_V1_20260429.xml
+26,"Oppenheimer & Co., Inc.",249,331677.74,129534.16,461211.9,28.1,70.5,27.0,100.0,CITADEL SECURITIES LLC,38.8,False,False,passive_retail,,249_606_NMS_2026_Q1_OPCO_V1_20260430.xml
+27,"Muriel Siebert & Co., Inc",5376,328402.61,63605.77,392008.38,16.2,52.1,42.4,100.0,Muriel Siebert & Co. Inc.,52.8,False,False,,,5376_606_NMS_2026_Q1_CNTXT-SBRT_V1_20260427.xml
+28,T3 Trading Group LLC,154431,0,321134.72,321134.72,100.0,0.0,0.0,100.0,Dash Financial,99.9,False,False,options_heavy|single_venue,,154431_606_NMS_2026_Q1_V1_20260427.xml
+29,PERSHING LLC,7560,171008.94,81289.9,252298.84,32.2,99.8,0.2,100.0,CITADEL SECURITIES LLC,33.3,False,False,passive_retail,,7560_606_NMS_2026_Q1_V2_20260521.xml
+30,TZCL,8089,251818.71,0,251818.71,0.0,15.4,55.4,100.0,"Virtu Americas, LLC",66.0,False,False,active_trader,,8089_606_NMS_2026_Q1_TZCL_V1_20260428.xml
+31,ALTU,299274,220636.74,0,220636.74,0.0,99.3,0.7,100.0,CITADEL SECURITIES LLC,52.3,False,False,passive_retail,,299274_606_NMS_2026_Q1_ALTU_V1_20260421.xml
+32,LGNT,117176,138541.87,25957.93,164499.8,15.8,92.4,5.1,100.0,Citadel Execution Services,50.2,False,True,passive_retail|abr,,117176_606_NMS_2026_Q1_LGNT_V1_20260430.xml
+33,AXOS,10083,138541.87,25957.93,164499.8,15.8,92.4,5.1,100.0,Citadel Execution Services,50.2,False,False,passive_retail,,10083_606_NMS_2026_Q1_AXOS_V1_20260429.xml
+34,AXOS,103792,138541.87,25957.93,164499.8,15.8,92.4,5.1,100.0,Citadel Execution Services,50.2,False,True,passive_retail|abr,,103792_606_NMS_2026_Q1_CNTXT-AXOS_V1_20260430.xml
+35,AXOS,104065,138541.87,25957.93,164499.8,15.8,92.4,5.1,100.0,Citadel Execution Services,50.2,False,False,passive_retail,,104065_606_NMS_2026_Q1_V1_20260520.xml
+36,AXOS,104651,138541.87,25957.93,164499.8,15.8,92.4,5.1,100.0,Citadel Execution Services,50.2,False,True,passive_retail|abr,,104651_606_NMS_2026_Q1_AXOS_V1_20260429.xml
+37,RBC Clearing & Custody,31194,0.0,142922.93,142922.93,100.0,93.9,3.3,100.0,"Wolverine Execution Services, LLC",72.3,False,True,options_heavy|passive_retail|abr,,31194_606_NMS_2026_Q1_CNTXT-RBCCLEARINGCUSTODY_V1_20260430.xml
+38,Regal Securities,7297,1831.65,73191.55,75023.2,97.6,16.8,72.5,100.0,CITADEL SECURITIES LLC,100.0,False,False,options_heavy|active_trader|single_venue,,7297_606_NMS_2026_Q1_V1_20260428.xml
+39,SOGO,17912,32341.75,37193.08,69534.83,53.5,8.1,78.9,100.0,CITADEL SECURITIES LLC,63.0,False,False,options_heavy|active_trader,,17912_606_NMS_2026_Q1_SOGO_V1_20260430.xml
+40,Maxim Group LLC,120708,19959.77,43701.8,63661.57,68.6,32.1,47.5,100.0,CITADEL SECURITIES LLC,73.3,False,False,options_heavy,,120708_606_NMS_2026_Q1_MAXM_V1_20260430.xml
+41,"StoneX Financial, Inc.",45993,28362.23,33906.15,62268.38,54.5,11.5,15.4,100.0,CITADEL SECURITIES LLC,92.7,False,True,options_heavy|single_venue|abr,,45993_606_NMS_2026_Q1_INTL_V1_20260430.xml
+42,CSTI,134,48146.72,0,48146.72,0.0,17.2,7.6,84.4,HRT FINANCIAL LP,25.8,False,False,,,134_606_NMS_2026_Q1_CSTI_V2_20260430.xml
+43,Hilltop Securities,6220,23413.01,19203.92,42616.93,45.1,86.2,10.5,100.0,Global Execution Brokers LP,36.8,False,False,options_heavy|passive_retail,,6220_606_NMS_2026_Q1_SWST_V1_20260428.xml
+44,"Velox Clearing, LLC",290215,-13863.7,52899.3,39035.6,135.5,7.2,45.4,100.0,Dash/IMC Financial Markets,99.9,False,False,options_heavy|single_venue,,290215_606_NMS_2026_Q1_VLOX_V1_20260430.xml
+45,Bulltick LLC,104005,38096.0,0.0,38096.0,0.0,47.9,52.0,100.0,"Pershing, LLC",100.0,False,False,active_trader|single_venue,,104005_606_NMS_2026_Q1_V1_20260604.xml
+46,QNTX,126588,0,37519.89,37519.89,100.0,0.0,0.0,100.0,Citadel Securities,100.0,False,False,options_heavy|single_venue,,126588_606_NMS_2026_Q1_V1_20260430.xml
+47,OPAL,8246,10701.41,25498.47,36199.88,70.4,1.3,25.8,100.0,Dash/IMC Financial Markets,88.1,False,False,options_heavy|single_venue,,8246_606_NMS_2026_Q1_OPAL_V1_20260501.xml
+48,SAFRA SECURITIES LLC,47873,34173.38,-7665.5,26507.88,-28.9,73.4,22.0,100.0,Citadel Securities LLC,89.4,False,False,passive_retail|single_venue,,47873_606_NMS_2026_Q1_V1_20260428.xml
+49,ChoiceTrade,104021,7553.83,18013.62,25567.45,70.5,7.8,90.5,100.0,Citadel Options,51.5,False,False,options_heavy|active_trader,,104021_606_NMS_2026_Q1_V1_20260429.xml
+50,TRIAD SECURITIES CORP.  S&P 500 Stocks 1Q 2026,11363,22264.28,0.0,22264.28,0.0,38.5,58.5,100.0,NFSC,90.1,False,False,active_trader|single_venue,,11363_606_NMS_2026_Q1_V1_20260422.xml
+51,MLCO.GWIM_NEW,7691,-826637.85,845710.14,19072.29,4434.2,47.8,50.8,100.0,"BofA Securities, Inc.",75.1,False,False,options_heavy|active_trader,,7691_606_NMS_2026_Q1_GWIM_V1_20260429.xml
+52,"Wedbush Securities, Inc.",125393,0.0,17291.0,17291.0,100.0,11.7,83.9,100.0,CITADEL SECURITIES LLC,73.5,False,True,options_heavy|active_trader|abr,,125393_606_NMS_2026_Q1_V1_20260423.xml
+53,"Wedbush Securities, Inc.",877,0.0,17291.0,17291.0,100.0,11.7,83.9,100.0,CITADEL SECURITIES LLC,73.5,False,False,options_heavy|active_trader,,877_606_NMS_2026_Q1_WEDB_V1_20260423.xml
+54,"Folio Investments, Inc., d/b/a Goldman Sachs Custody Solutions",48015,11343.37,0,11343.37,0.0,91.1,8.7,100.0,Goldman Sachs & Co. LLC,37.9,False,True,passive_retail|abr,,48015_606_NMS_2026_Q1_V1_20260430.xml
+55,Prism Financial Products LP,306255,0,10286.83,10286.83,100.0,0.0,0.0,100.0,X-Change Financial Access (XFA),100.0,False,False,options_heavy|single_venue,,306255_606_NMS_2026_Q1_V1_20260428.xml
+56,ViewTrade,46987,10097.99,137.16,10235.15,1.3,14.0,85.7,100.0,CDRG,74.3,False,False,active_trader,,46987_606_NMS_2026_Q1_V1_20260501.xml
+57,ETCB,145276,10050.69,0,10050.69,0.0,23.2,10.0,96.7,Citadel Securities LLC,25.1,False,False,,,145276_606_NMS_2026_Q1_20260407161155872_V1_20260414.xml
+58,"R.F. Lafferty & Co., Inc.",2498,0.0,8989.0,8989.0,100.0,46.7,48.2,100.0,Citadel Securities LLC (CITL),29.3,False,False,options_heavy,,2498_606_NMS_2026_Q1_V1_20260521.xml
+59,Evercore ISI,42405,0,4470.11,4470.11,100.0,0.0,0.0,91.6,CBOE,20.3,False,False,options_heavy,,42405_606_NMS_2026_Q1_V1_20260429.xml
+60,Celadon Financial Group,36538,7377.25,-3308.4,4068.85,-81.3,16.8,80.6,100.0,SUSQ,84.6,False,False,active_trader|single_venue,,36538_606_NMS_2026_Q1_V3_20260526.xml
+61,Pictet Overseas Brokerage Services,36500,2993.0,149.0,3142.0,4.7,47.0,52.8,100.0,"Instinet, LLC",99.1,False,False,active_trader|single_venue,,36500_606_NMS_2026_Q1_V1_20260424.xml
+62,WALL STREET ACCESS,10012,2018.16,-719.25,1298.91,-55.4,27.8,48.0,100.0,NYSE ARCA OPTIONS,22.2,False,False,,,10012_606_NMS_2026_Q1_WABR_V1_20260603.xml
+63,LEHM,19714,0,808.26,808.26,100.0,0.0,0.0,24.1,CBOE GLOBAL MARKETS INC.,20.2,False,False,options_heavy,,19714_606_NMS_2026_Q1_CNTXT-LEHM_V1_20260416.xml
+64,FENX,159481,527.47,72.72,600.19,12.1,32.1,62.2,100.0,"Instinet, LLC",28.5,False,False,active_trader,,159481_606_NMS_2026_Q1_V1_20260401.xml
+65,Axos Invest LLC,172393,404.12,81.7,485.82,16.8,51.7,44.8,100.0,Dash/IMC Financial Markets,100.0,False,False,single_venue,,172393_606_NMS_2026_Q1_WISE_V1_20260429.xml
+66,APEX_VE2L,326979,386.3,0,386.3,0.0,100.0,0.0,100.0,"Virtu Americas, LLC",43.3,False,False,passive_retail,,326979_606_NMS_2026_Q1_ZOES_V1_20260428.xml
+67,FNNL,316281,374.83,0,374.83,0.0,95.0,5.0,100.0,"Instinet, LLC",58.4,False,False,passive_retail,,316281_606_NMS_2026_Q1_FNNL_V1_20260428.xml
+68,DRWW,165429,0,21.0,21.0,100.0,0.0,0.0,100.0,Global Execution Brokers LP,38.4,False,False,options_heavy,,165429_606_NMS_2026_Q1_DRVW_V1_20260430.xml
+69,wdco,3777,3.03,0,3.03,0.0,60.2,35.1,100.0,Buckman Buckman & Reid INC,83.0,False,False,passive_retail|single_venue,,3777_606_NMS_2026_Q1_20260424141654022_V1_20260429.xml
+70,"SageTrader, LLC",137862,0,1.85,1.85,100.0,0.0,0.0,100.0,"RQD* Clearing, LLC",90.7,False,False,options_heavy|single_venue,,137862_606_NMS_2026_Q1_SAGE_V1_20260429.xml
+71,"Cabrera Capital Markets, Inc.",10081,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,10081_606_NMS_2026_Q1_V2_20260526.xml
+72,PLANMEMBER SECURITIES CORP,11869,0.0,0.0,0.0,0.0,93.2,6.0,100.0,CITADEL SECURITIES LLC,60.5,True,False,passive_retail|no_pfof,,11869_606_NMS_2026_Q1_V1_20260427.xml
+73,Themis Trading LLC,120116,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,120116_606_NMS_2026_Q1_V1_20260421.xml
+74,MIDWESTERN SECURITIES TRADING,101080,0.0,0,0.0,0.0,99.2,0.8,100.0,"G1 Execution Services, LLC",21.8,True,False,passive_retail|no_pfof,,101080_606_NMS_2026_Q1_V1_20260416.xml
+75,COAK,125334,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,125334_606_NMS_2026_Q1_V1_20260430.xml
+76,Cetera Advisors LLC,10299,0.0,0.0,0.0,0.0,97.5,1.6,100.0,Citadel Securities LLC (CITL),30.1,True,False,passive_retail|no_pfof,,10299_606_NMS_2026_Q1_V1_20260416.xml
+77,GENW,120894,0.0,0.0,0.0,0.0,98.0,1.7,100.0,Global Execution Brokers LP,24.1,True,False,passive_retail|no_pfof,,120894_606_NMS_2026_Q1_GENW_V1_20260424.xml
+78,Cetera Financial Specialists LLC,10358,0.0,0.0,0.0,0.0,98.6,1.2,100.0,Citadel Securities LLC (CITL),41.7,True,False,passive_retail|no_pfof,,10358_606_NMS_2026_Q1_V1_20260416.xml
+79,Craig-Hallum Capital Group LLC,121395,0.0,0,0.0,0.0,0.0,0.0,100.0,"Nasdaq Execution Services, LLC.",100.0,True,False,single_venue|no_pfof,No PFOF per materialAspects — routes to exchanges,121395_606_NMS_2026_Q1_V1_20260417.xml
+80,"RBC SECURITIES, INC.",103705,0.0,0.0,0.0,0.0,86.3,13.4,100.0,Citadel Securities LLC,37.9,True,True,passive_retail|no_pfof|abr,,103705_606_NMS_2026_Q1_V1_20260428.xml
+81,IDB CAPITAL CORP,106032,0.0,0.0,0.0,0.0,74.3,18.3,100.0,CITADEL SECURITIES LLC,31.5,True,True,passive_retail|no_pfof|abr,No PFOF per materialAspects — routes to exchanges,106032_606_NMS_2026_Q1_V1_20260420.xml
+82,"Gagnon Securities, LLC",103727,0,0.0,0.0,0.0,0.0,0.0,100.0,JEFFERIES,100.0,True,False,single_venue|no_pfof,,103727_606_NMS_2026_Q1_CNTXT-S3_V1_20260427.xml
+83,NewEdge Capital Group,10674,0.0,0.0,0.0,0.0,96.8,3.2,100.0,Citadel Execution Services(CES),36.4,True,False,passive_retail|no_pfof,,10674_606_NMS_2026_Q1_V1_20260430.xml
+84,USCA SECURITIES LLC,103789,0.0,0.0,0.0,0.0,97.0,2.8,100.0,National Financial Services LLC,40.4,True,True,passive_retail|no_pfof|abr,,103789_606_NMS_2026_Q1_CNTXT-MPID1_V1_20260430.xml
+85,"SpeedTrader, Inc.",107403,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,107403_606_NMS_2026_Q1_MINT_V2_20260415.xml
+86,Natixis Securities Americas LLC,1101,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,1101_606_NMS_2026_Q1_V1_20260410.xml
+87,MWA FINANCIAL SERVICES INC,112630,0.0,0.0,0.0,0.0,96.9,1.2,100.0,CITADEL SECURITIES LLC,40.5,True,False,passive_retail|no_pfof,,112630_606_NMS_2026_Q1_V1_20260416.xml
+88,"Glen Eagle Wealth, LLC",124504,0.0,0.0,0.0,0.0,96.6,3.4,100.0,"JANE STREET CAPITAL, LLC",53.0,True,False,passive_retail|no_pfof,,124504_606_NMS_2026_Q1_CNTXT_V1_20260430.xml
+89,William Blair Sell Side,1252,0.0,0.0,0.0,0.0,92.1,6.5,100.0,Citadel Securities LLC (CDRG),35.3,True,False,passive_retail|no_pfof,,1252_606_NMS_2026_Q1_V1_20260424.xml
+90,"MML INVESTORS SERVICES, LLC",10409,0.0,0.0,0.0,0.0,99.3,0.7,100.0,Citadel Securities LLC,39.3,True,True,passive_retail|no_pfof|abr,,10409_606_NMS_2026_Q1_V1_20260423.xml
+91,M. S. Howells & Co.,104100,0,0.0,0.0,0.0,0.0,0.0,100.0,CITADEL SECURITIES LLC,29.0,True,False,no_pfof,,104100_606_NMS_2026_Q1_HWLS_V1_20260420.xml
+92,"White Mountain Capital, LLC",104123,0.0,0.0,0.0,0.0,83.5,16.4,100.0,CITADEL SECURITIES LLC,38.4,True,False,passive_retail|no_pfof,,104123_606_NMS_2026_Q1_V1_20260421.xml
+93,TIGE,120583,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,120583_606_NMS_2026_Q1_20260408175046986_1_V1_20260428.xml
+94,"Korea Investment & Securities America, Inc.",104158,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,104158_606_NMS_2026_Q1_KISA_V1_20260421.xml
+95,Compass Point Research Trading LLC,126258,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,126258_606_NMS_2026_Q1_V1_20260410.xml
+96,Allen Company LLC,1042,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,1042_606_NMS_2026_Q1_V1_20260421.xml
+97,PGM Global Inc.,104387,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,104387_606_NMS_2026_Q1_V1_20260407.xml
+98,DINO,104446,0.0,0.0,0.0,0.0,48.7,51.3,100.0,DASH FINANCIAL TECHNOLOGIES LL,99.9,True,False,active_trader|single_venue|no_pfof,,104446_606_NMS_2026_Q1_V1_20260501.xml
+99,VSI SECURITIES INC,114419,0.0,0,0.0,0.0,90.7,8.1,100.0,CITADEL SECURITIES LLC,24.5,True,True,passive_retail|no_pfof|abr,,114419_606_NMS_2026_Q1_V1_20260527.xml
+100,TradeMas Inc,130030,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,130030_606_NMS_2026_Q1_TMAS_V1_20260424.xml
+101,CALD,10489,0.0,0,0.0,0.0,47.5,47.7,100.0,VIRTU Americas LLC,70.3,True,False,no_pfof,,10489_606_NMS_2026_Q1_V1_20260430.xml
+102,"PARKLAND SECURITIES, LLC",115368,0.0,0.0,0.0,0.0,99.2,0.6,100.0,Citadel Securities LLC,31.8,True,False,passive_retail|no_pfof,,115368_606_NMS_2026_Q1_V1_20260415.xml
+103,SAXONY SECURITIES INC,115547,0.0,0.0,0.0,0.0,91.4,8.4,100.0,CITADEL SECURITIES LLC,38.0,True,False,passive_retail|no_pfof,,115547_606_NMS_2026_Q1_V1_20260407.xml
+104,"BROWN LISLE CUMMINGS, INC.",1331,0.0,0.0,0.0,0.0,94.3,5.2,100.0,"Jane Street Capital, LLC",33.2,True,False,passive_retail|no_pfof,,1331_606_NMS_2026_Q1_V1_20260415.xml
+105,CHCK,128711,0.0,0,0.0,0.0,57.6,1.1,100.0,Fidelity Dynamic Liquidity Man,49.5,True,False,no_pfof,,128711_606_NMS_2026_Q1_V1_20260414.xml
+106,PNC WEALTH MANAGEMENT LLC,129052,0.0,0.0,0.0,0.0,89.7,9.5,100.0,Citadel Securities LLC,35.7,True,True,passive_retail|no_pfof|abr,,129052_606_NMS_2026_Q1_V1_20260427.xml
+107,"AMERITAS INVESTMENT COMPANY,LLC",14869,0.0,0.0,0.0,0.0,99.0,0.8,100.0,Citadel Securities LLC,33.1,True,False,passive_retail|no_pfof,,14869_606_NMS_2026_Q1_V1_20260417.xml
+108,Dawson James,130645,0.0,0,0.0,0.0,0.0,0.0,100.0,"NASDAQ EXECUTION SERVICES, LLC",99.9,True,False,single_venue|no_pfof,,130645_606_NMS_2026_Q1_V1_20260408.xml
+109,Strategas Research Partners LLC,149326,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,149326_606_NMS_2026_Q1_V1_20260428.xml
+110,MUTUAL SECURITIES INC,13092,0.0,0.0,0.0,0.0,75.0,24.8,100.0,Citadel Securities LLC,43.1,True,True,passive_retail|no_pfof|abr,,13092_606_NMS_2026_Q1_V1_20260415.xml
+111,"EMPOWER FINANCIAL SERVICES, INC.",13109,0.0,0.0,0.0,0.0,55.0,36.9,100.0,CITADEL SECURITIES LLC,35.7,True,True,no_pfof|abr,,13109_606_NMS_2026_Q1_CNTXT-Pershing7560GWFS_V1_20260414.xml
+112,"BTG Pactual US Capital, LLC",149486,0.0,0.0,0.0,0.0,61.2,35.5,100.0,"Matrix Executions, LLC (RSKY)",74.6,True,False,passive_retail|no_pfof,,149486_606_NMS_2026_Q1_V1_20260430.xml
+113,GRIFFINEST ASIA SECURITIES LLC,132187,0.0,0.0,0.0,0.0,67.7,31.0,100.0,CITADEL SECURITIES LLC,45.5,True,False,passive_retail|no_pfof,,132187_606_NMS_2026_Q1_V1_20260414.xml
+114,SNOWDEN ACCOUNT SERVICES LLC,149794,0.0,0.0,0.0,0.0,92.5,6.7,100.0,CITADEL SECURITIES LLC,34.7,True,False,passive_retail|no_pfof,,149794_606_NMS_2026_Q1_V1_20260416.xml
+115,Virtu Americas LLC,149823,0.0,0,0.0,0.0,41.3,41.8,100.0,"Virtu Americas, LLC",100.0,True,True,single_venue|no_pfof|abr,,149823_606_NMS_2026_Q1_VIRT_V1_20260430.xml
+116,PAR5 CAPITAL & CO. LLC,134657,0.0,0.0,0.0,0.0,95.6,4.4,100.0,CITADEL SECURITIES LLC,42.9,True,True,passive_retail|no_pfof|abr,,134657_606_NMS_2026_Q1_V1_20260415.xml
+117,Santander US Capital Markets LLC,150696,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,150696_606_NMS_2026_Q1_V1_20260417.xml
+118,"Cetera Wealth Services, LLC",13572,0.0,0.0,0.0,0.0,96.4,2.9,100.0,Citadel Securities LLC (CITL),34.9,True,False,passive_retail|no_pfof,,13572_606_NMS_2026_Q1_V1_20260416.xml
+119,BERTHEL FISHER & COMPANY,13609,0.0,0.0,0.0,0.0,94.2,4.3,100.0,Citadel Securities LLC,36.1,True,False,passive_retail|no_pfof,,13609_606_NMS_2026_Q1_CNTXT-NFS_V1_20260501.xml
+120,Penserra Securities LLC,145994,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,145994_606_NMS_2026_Q1_CNTXT-CHBC_V1_20260416.xml
+121,Watermill Institutional Trading Llc,150892,0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,150892_606_NMS_2026_Q1_V1_20260506.xml
+122,KEY INVESTMENT SERVICES LLC,136300,0.0,0,0.0,0.0,82.3,13.7,100.0,CITADEL SECURITIES LLC,24.0,True,False,passive_retail|no_pfof,,136300_606_NMS_2026_Q1_V1_20260410.xml
+123,PUMA Capital,146744,0,0.0,0.0,0.0,0.0,0.0,73.4,DASH FINANCIAL TECHNOLOGIES LLC,38.5,True,False,no_pfof,,146744_606_NMS_2026_Q1_CNTXT-PUMX_V1_20260506.xml
+124,BENJAMIN F EDWARDS & COMPANY INC,146936,0.0,0.0,0.0,0.0,96.0,3.0,100.0,CITADEL SECURITIES LLC,33.8,True,True,passive_retail|no_pfof|abr,,146936_606_NMS_2026_Q1_V1_20260429.xml
+125,Kepler Capital Markets Inc,139148,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,139148_606_NMS_2026_Q1_V1_20260402.xml
+126,"North South Capital,LLC",148158,0.0,0.0,0.0,0.0,41.4,42.0,100.0,"BNY MELLON CAPITAL MARKETS, LLC",94.2,True,False,single_venue|no_pfof,,148158_606_NMS_2026_Q1_V1_20260511.xml
+127,MCAP LLC,139515,0.0,0,0.0,0.0,0.1,73.7,100.0,"Two Sigma Securities, LLC",87.5,True,False,active_trader|single_venue|no_pfof,,139515_606_NMS_2026_Q1_MCAP_V1_20260430.xml
+128,"INTEGRITY ALLIANCE, LLC",139627,0.0,0.0,0.0,0.0,94.8,2.0,100.0,CITADEL SECURITIES LLC,40.1,True,False,passive_retail|no_pfof,,139627_606_NMS_2026_Q1_V1_20260415.xml
+129,Cetera Investment Services LLC,15340,0.0,0.0,0.0,0.0,95.8,2.7,100.0,"Virtu Americas, LLC (NITE)",51.6,True,False,passive_retail|no_pfof,,15340_606_NMS_2026_Q1_V1_20260416.xml
+130,ABN Amro Clearing USA,14020,0,0.0,0.0,0.0,0.0,0.0,100.0,Dash Financial Technologies LLC,100.0,True,False,single_venue|no_pfof,,14020_606_NMS_2026_Q1_V1_20260429.xml
+131,WLTH,153407,0.0,0,0.0,0.0,4.5,95.5,100.0,CITADEL SECURITIES LLC,63.1,True,False,active_trader|no_pfof,,153407_606_NMS_2026_Q1_WLTH_V1_20260423.xml
+132,"SYNOVUS SECURITIES, INC.",14023,0.0,0.0,0.0,0.0,98.9,1.0,100.0,Citadel Securities LLC,39.0,True,False,passive_retail|no_pfof,,14023_606_NMS_2026_Q1_V1_20260415.xml
+133,Elevation LLC,140341,0,0.0,0.0,0.0,0.0,0.0,100.0,Citadel Securities Institutional LLC,100.0,True,False,single_venue|no_pfof,,140341_606_NMS_2026_Q1_V1_20260427.xml
+134,"MSEC, LLC",154327,0.0,0.0,0.0,0.0,27.2,72.8,100.0,Interactive Brokers LLC,50.0,True,False,active_trader|no_pfof,,154327_606_NMS_2026_Q1_V1_20260421.xml
+135,KART,14178,0.0,0,0.0,0.0,0.0,0.0,100.0,Citadel Securities LLC,100.0,True,False,single_venue|no_pfof,,14178_606_NMS_2026_Q1_V1_20260407.xml
+136,TIGRESS FINANCIAL PARTNERS LLC,154717,0.0,0.0,0.0,0.0,67.2,5.1,100.0,CITADEL SECURITIES LLC,37.7,True,True,passive_retail|no_pfof|abr,,154717_606_NMS_2026_Q1_V1_20260414.xml
+137,"AVENTURA SECURITIES, LLC",142374,0.0,0.0,0.0,0.0,88.8,9.8,100.0,Citadel Securities LLC,34.3,True,False,passive_retail|no_pfof,,142374_606_NMS_2026_Q1_V1_20260415.xml
+138,LPSP,155246,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,155246_606_NMS_2026_Q1_LPSP_V1_20260429.xml
+139,SIGMA FINANCIAL CORPORATION,14303,0.0,0.0,0.0,0.0,96.7,3.1,100.0,Citadel Securities LLC,36.1,True,False,passive_retail|no_pfof,,14303_606_NMS_2026_Q1_V1_20260415.xml
+140,ANDBANC BROKERAGE LLC,155979,0.0,0.0,0.0,0.0,72.0,26.8,100.0,"GLOBAL EXECUTION BROKERS, LP.",35.2,True,True,passive_retail|no_pfof|abr,,155979_606_NMS_2026_Q1_CNTXT-MPID_V1_20260428.xml
+141,MEDIOBANCA SECURITIES USA LLC,143189,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,143189_606_NMS_2026_Q1_V1_20260424.xml
+142,Odeon Capital Group LLC,148493,0,0.0,0.0,0.0,0.0,0.0,97.3,DASH FINIANCIAL TECHNOLOGIES LLC,86.8,True,False,single_venue|no_pfof,No PFOF per materialAspects — routes to exchanges,148493_606_NMS_2026_Q1_V1_20260429.xml
+143,CGIS SECURITIES LLC,155984,0.0,0.0,0.0,0.0,78.9,11.7,100.0,CITADEL SECURITIES LLC,31.4,True,True,passive_retail|no_pfof|abr,,155984_606_NMS_2026_Q1_CNTXT_MPID_V1_20260407.xml
+144,"U.S. BANCORP ADVISORS, LLC",14455,0.0,0.0,0.0,0.0,83.5,14.5,100.0,Citadel Securities LLC,37.1,True,False,passive_retail|no_pfof,,14455_606_NMS_2026_Q1_V1_20260421.xml
+145,Berenberg Capital Markets LLC,156757,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,156757_606_NMS_2026_Q1_V1_20260430.xml
+146,Daiwa Capital Markets America Inc.,1576,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,1576_606_NMS_2026_Q1_V1_20260416.xml
+147,NOBL,15768,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,15768_606_NMS_2026_Q1_20260408175022794_V1_20260413.xml
+148,BNP Paribas Securities Corp.,15794,0,0.0,0.0,0.0,0.0,0.0,95.0,Dash Financial Technologies LLC,95.0,True,False,single_venue|no_pfof,,15794_606_NMS_2026_Q1_V1_20260429.xml
+149,TRANSAMERICA FINANCIAL ADVISORS,16164,0.0,0,0.0,0.0,99.9,0.1,100.0,"G1 Execution Services, LLC",21.5,True,False,passive_retail|no_pfof,,16164_606_NMS_2026_Q1_V1_20260512.xml
+150,NEED,16360,0,0.0,0.0,0.0,0.0,0.0,31.3,CBOE Exchange,16.1,True,False,no_pfof,,16360_606_NMS_2026_Q1_V1_20260416.xml
+151,"TCFG WEALTH MANAGEMENT, LLC",164153,0.0,0.0,0.0,0.0,92.3,6.4,100.0,"GLOBAL EXECUTION BROKERS, LP.",35.4,True,False,passive_retail|no_pfof,,164153_606_NMS_2026_Q1_V1_20260409.xml
+152,TD PRIVATE CLIENT WEALTH LLC,164484,0.0,0,0.0,0.0,99.2,0.8,100.0,CITADEL SECURITIES LLC,26.5,True,False,passive_retail|no_pfof,,164484_606_NMS_2026_Q1_V1_20260409.xml
+153,"CLSA AMERICAS, LLC.",165533,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,165533_606_NMS_2026_Q1_V1_20260414.xml
+154,"DOFT & CO.,INC.",1660,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,1660_606_NMS_2026_Q1_V1_20260415.xml
+155,China Renaissance Securities US Inc,166318,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,166318_606_NMS_2026_Q1_V1_20260415.xml
+156,EPIC CAPITAL SECURITIES CORP,166756,0.0,0.0,0.0,0.0,73.9,18.9,100.0,CITADEL SECURITIES LLC,38.9,True,True,passive_retail|no_pfof|abr,,166756_606_NMS_2026_Q1_CNTXT-MPID_V1_20260416.xml
+157,BMO Capital Markets Corp,16686,0,0.0,0.0,0.0,0.0,0.0,23.2,BOX OPTIONS EXCHANGE (XBOX),12.0,True,False,no_pfof,,16686_606_NMS_2026_Q1_V1_20260421.xml
+158,LIFESCI CAPITAL LLC,168404,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,168404_606_NMS_2026_Q1_V1_20260504.xml
+159,Clearpool Execution Services,168490,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,True,no_pfof|abr,,168490_606_NMS_2026_Q1_V1_20260424.xml
+160,HUNTINGTON FINANCIAL ADVISORS,16986,0.0,0.0,0.0,0.0,96.7,2.6,100.0,Citadel Securities LLC,41.7,True,False,passive_retail|no_pfof,,16986_606_NMS_2026_Q1_V1_20260415.xml
+161,"UMB FINANCIAL SERVICES, INC.",17073,0.0,0.0,0.0,0.0,91.8,7.1,100.0,Citadel Securities LLC,34.1,True,False,passive_retail|no_pfof,,17073_606_NMS_2026_Q1_V1_20260415.xml
+162,Academy Securities,17433,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,17433_606_NMS_2026_Q1_V1_20260507.xml
+163,AMERICAN CENTURY INVESTMENT,17437,0.0,0.0,0.0,0.0,63.0,31.6,100.0,CITADEL SECURITIES LLC,39.9,True,True,passive_retail|no_pfof|abr,,17437_606_NMS_2026_Q1_V1_20260421.xml
+164,"BNY Mellon Capital Markets, LLC (BKES)",17454,0.0,0,0.0,0.0,45.6,37.7,100.0,VIRTU AMERICAS LLC (VALR),80.4,True,False,single_venue|no_pfof,,17454_606_NMS_2026_Q1_CNTXT-BKES_V1_20260430.xml
+165,FROST BROKERAGE SERVICES INC,17465,0.0,0.0,0.0,0.0,89.0,7.6,100.0,Citadel Securities LLC,37.7,True,False,passive_retail|no_pfof,,17465_606_NMS_2026_Q1_V1_20260416.xml
+166,G.A. REPPLE & COMPANY,17486,0.0,0.0,0.0,0.0,97.0,2.5,100.0,Dash Financial Technologies LLC,50.0,True,False,passive_retail|no_pfof,,17486_606_NMS_2026_Q1_V1_20260417.xml
+167,"Truist Investment Services, Inc.",17499,0.0,0.0,0.0,0.0,89.5,10.1,100.0,Citadel Securities (CDRG),19.3,True,False,passive_retail|no_pfof,,17499_606_NMS_2026_Q1_V1_20260417.xml
+168,BOK Financial Securities Inc,17530,0.0,0.0,0.0,0.0,69.1,13.6,100.0,Citadel Securities LLC,35.7,True,True,passive_retail|no_pfof|abr,,17530_606_NMS_2026_Q1_V1_20260430.xml
+169,U.S. Bancorp Investments,17868,0.0,0.0,0.0,0.0,95.6,3.7,100.0,Pershing,100.0,True,False,passive_retail|single_venue|no_pfof,,17868_606_NMS_2026_Q1_V1_20260420.xml
+170,THRIVENT INVESTMENT MANAGEMENT,18387,0.0,0.0,0.0,0.0,99.6,0.4,100.0,Citadel Securities LLC,37.6,True,False,passive_retail|no_pfof,,18387_606_NMS_2026_Q1_V1_20260415.xml
+171,TD Securities USA LLC,18476,0,0.0,0.0,0.0,0.0,0.0,42.6,CBOE C2 OPTIONS EXCHANGE,10.3,True,False,no_pfof,,18476_606_NMS_2026_Q1_V1_20260506.xml
+172,Johnson Rice,19524,0.0,0,0.0,0.0,0.0,0.0,100.0,GSAT,48.6,True,False,no_pfof,,19524_606_NMS_2026_Q1_V1_20260402.xml
+173,"Wells Fargo Clearing Services, LLC",19616,0.0,0.0,0.0,0.0,58.0,32.9,100.0,Wells Fargo Securities,55.5,True,True,no_pfof|abr,No PFOF per materialAspects — routes to exchanges,19616_606_NMS_2026_Q1_WELS_V1_20260424.xml
+174,MUFG Securities Americas Inc,19685,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,19685_606_NMS_2026_Q1_V1_20260408.xml
+175,BGCP,19801,0,0.0,0.0,0.0,0.0,0.0,44.2,CBOE Exchange,38.2,True,False,no_pfof,,19801_606_NMS_2026_Q1_V1_20260430.xml
+176,D.A. Davidson & Co.,199,0.0,0.0,0.0,0.0,93.8,1.6,100.0,CITADEL SECURITIES LLC,36.9,True,False,passive_retail|no_pfof,No PFOF per materialAspects — routes to exchanges,199_606_NMS_2026_Q1_V1_20260427.xml
+177,GFIS,19982,0,0.0,0.0,0.0,0.0,0.0,13.7,ISE Mercury Options,4.0,True,False,no_pfof,,19982_606_NMS_2026_Q1_V1_20260430.xml
+178,Gilder Gagnon Howe & Co. LLC,2002,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,2002_606_NMS_2026_Q1_V1_20260420.xml
+179,TIAA-CREF INDIVIDUAL &,20472,0.0,0.0,0.0,0.0,68.3,27.3,100.0,CITADEL SECURITIES LLC,33.6,True,False,passive_retail|no_pfof,,20472_606_NMS_2026_Q1_V1_20260410.xml
+180,"SANCTUARY SECURITIES, INC.",205,0.0,0.0,0.0,0.0,98.5,1.4,100.0,CITADEL SECURITIES LLC,32.9,True,False,passive_retail|no_pfof,,205_606_NMS_2026_Q1_V1_20260407.xml
+181,"WORLD INVESTMENTS, INC.",20626,0.0,0.0,0.0,0.0,99.6,0.3,100.0,CITADEL SECURITIES LLC,100.0,True,True,passive_retail|single_venue|no_pfof|abr,,20626_606_NMS_2026_Q1_V1_20260421.xml
+182,UNITED PLANNERS FNC'L SVCS AMER,20804,0.0,0.0,0.0,0.0,86.8,13.0,100.0,CITADEL SECURITIES LLC,37.7,True,True,passive_retail|no_pfof|abr,,20804_606_NMS_2026_Q1_V1_20260420.xml
+183,ThinkEquity,20996,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,20996_606_NMS_2026_Q1_V1_20260414.xml
+184,MIDDLEGATE SECURITIES INC.,21544,0.0,0.0,0.0,0.0,51.9,47.2,100.0,Citadel Securities LLC,36.8,True,True,no_pfof|abr,,21544_606_NMS_2026_Q1_V1_20260420.xml
+185,Citizens JMP Securities,22208,0,0.0,0.0,0.0,0.0,0.0,100.0,X-Change Financial Access,100.0,True,False,single_venue|no_pfof,,22208_606_NMS_2026_Q1_V1_20260420.xml
+186,"OSAIC WEALTH, INC.",23131,0.0,0.0,0.0,0.0,97.2,2.2,100.0,CITADEL SECURITIES LLC,33.8,True,False,passive_retail|no_pfof,,23131_606_NMS_2026_Q1_CNTX-Pershing_V2_20260428.xml
+187,Jefferies Group LLC,2347,0.0,0.0,0.0,0.0,45.2,9.6,100.0,KNIGHT EQUITY MARKETS(NITE),100.0,True,False,single_venue|no_pfof,,2347_606_NMS_2026_Q1_V1_20260430.xml
+188,"BREAN CAPITAL, LLC",23723,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,23723_606_NMS_2026_Q1_V1_20260429.xml
+189,DOWL,24746,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,24746_606_NMS_2026_Q1_V1_20260402.xml
+190,BEECH HILL SECURITIES INC,24771,0.0,0.0,0.0,0.0,50.8,41.2,100.0,DASH FINANCIAL TECH LLC,26.8,True,True,no_pfof|abr,No PFOF per materialAspects — routes to exchanges,24771_606_NMS_2026_Q1_V1_20260416.xml
+191,Joseph Gunnar Co LLC,24795,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,True,no_pfof|abr,,24795_606_NMS_2026_Q1_V1_20260401.xml
+192,"Edward D. Jones & Co, LP",250,0.0,0,0.0,0.0,98.3,1.1,100.0,"Virtu Americas, LLC",25.1,True,False,passive_retail|no_pfof,,250_606_NMS_2026_Q1_EDJO_V1_20260422.xml
+193,DEUTSCHE BANK SECURITIES INC,2525,0.0,0.0,0.0,0.0,73.8,24.5,100.0,CITADEL SECURITIES LLC,35.3,True,False,passive_retail|no_pfof,,2525_606_NMS_2026_Q1_V1_20260427.xml
+194,"CFD INVESTMENTS, INC.",25427,0.0,0.0,0.0,0.0,99.4,0.4,100.0,Citadel Securities LLC,66.7,True,False,passive_retail|no_pfof,,25427_606_NMS_2026_Q1_V1_20260420.xml
+195,RAYMOND JAMES USA LTD,25853,0.0,0.0,0.0,0.0,90.7,9.2,100.0,CITADEL SECURITIES LLC,43.1,True,True,passive_retail|no_pfof|abr,,25853_606_NMS_2026_Q1_V2_20260427.xml
+196,Tocqueville Securities LP,26001,0,0.0,0.0,0.0,0.0,0.0,100.0,"Citadel Securities, LLC",35.3,True,False,no_pfof,,26001_606_NMS_2026_Q1_V1_20260428.xml
+197,American Enterprise Investment Services Inc. (AEIS),26506,0.0,0.0,0.0,0.0,90.8,1.5,100.0,Citadel Execution Services,39.8,True,True,passive_retail|no_pfof|abr,,26506_606_NMS_2026_Q1_AMPR_V1_20260427.xml
+198,Scotia Capital (USA) Inc,2739,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,2739_606_NMS_2026_Q1_V1_20260428.xml
+199,ICAP,2762,0,0.0,0.0,0.0,0.0,0.0,100.0,"Matrix Executions, LLC",82.7,True,False,single_venue|no_pfof,,2762_606_NMS_2026_Q1_PBON_V3_20260430.xml
+200,281065 606 NMS,281065,0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,True,True,no_pfof|abr,,281065_606_NMS_2026_Q1_V1_20260414.xml
+201,Old Mission Markets LLC,281867,0,0.0,0.0,0.0,0.0,0.0,100.0,"Cboe Exchange, Inc.",61.7,True,False,no_pfof,,281867_606_NMS_2026_Q1_OLMN_V1_20260423.xml
+202,Tradition Securities and Derivatives,28269,0,0.0,0.0,0.0,0.0,0.0,89.7,NYSE American  LLC,42.4,True,False,no_pfof,,28269_606_NMS_2026_Q1_HeldComplianceReport_V2_20260429.xml
+203,Moomoo Financial Inc,283078,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,283078_606_NMS_2026_Q1_CNTXT-IBKR_FUTM_V1_20260430.xml
+204,Market Securities LLC,283701,0,0.0,0.0,0.0,0.0,0.0,100.0,"TJM Investments, LLC",58.6,True,False,no_pfof,,283701_606_NMS_2026_Q1_V2_20260428.xml
+205,SSC.ANOS,284714,0,0.0,0.0,0.0,0.0,0.0,100.0,"Matrix Executions, LLC / Simplex Trading, LLC",100.0,True,False,single_venue|no_pfof,,284714_606_NMS_2026_Q1_V1_20260409.xml
+206,"STATE STREET GLOBAL MARKETS, LLC",285852,0.0,0,0.0,0.0,100.0,0.0,100.0,National Financial Services LLC,34.5,True,False,passive_retail|no_pfof,No PFOF per materialAspects — routes to exchanges,285852_606_NMS_2026_Q1_V1_20260429.xml
+207,SMBC Nikko Securities Americas Inc,28602,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,28602_606_NMS_2026_Q1_V1_20260403.xml
+208,GBMT,28684,0.0,0.0,0.0,0.0,15.1,28.7,100.0,Pershing LLC,94.2,True,False,single_venue|no_pfof,,28684_606_NMS_2026_Q1_V1_20260427.xml
+209,nblb,2908,0,0.0,0.0,0.0,0.0,0.0,97.8,SUFI,60.0,True,False,no_pfof,,2908_606_NMS_2026_Q1_20260407160058454_updated_V2_20260423.xml
+210,Rockefeller Financial LLC,291361,0.0,0.0,0.0,0.0,98.0,1.0,100.0,"NATIONAL FINANCIAL SERVICES, LLC",98.7,True,False,passive_retail|single_venue|no_pfof,,291361_606_NMS_2026_Q1_V1_20260420.xml
+211,INSIGNEO SECURITIES LLC,29249,0.0,0.0,0.0,0.0,73.5,19.9,100.0,CITADEL SECURITIES LLC,37.5,True,True,passive_retail|no_pfof|abr,,29249_606_NMS_2026_Q1_V1_20260424.xml
+212,THE O N EQUITY SALES COMPANY,2936,0.0,0.0,0.0,0.0,99.3,0.6,100.0,CITADEL SECURITIES LLC,58.6,True,False,passive_retail|no_pfof,,2936_606_NMS_2026_Q1_V1_20260414.xml
+213,ORIENTAL FINANCIAL SERVICES LLC,29753,0.0,0.0,0.0,0.0,99.1,0.8,100.0,CITADEL SECURITIES LLC,38.9,True,True,passive_retail|no_pfof|abr,,29753_606_NMS_2026_Q1_V1_20260413.xml
+214,HTSC,298809,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,298809_606_NMS_2026_Q1_V1_20260413.xml
+215,Think Alpha Securities,300679,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,300679_606_NMS_2026_Q1_TAIQ_V1_20260415.xml
+216,IMC Execution Services,301273,0,0.0,0.0,0.0,0.0,0.0,0.0,CBOE OPTIONS EXCHANGE,64.0,True,False,no_pfof,,301273_606_NMS_2026_Q1_V1_20260430.xml
+217,HUNTER ASSOCIATES,30177,0.0,0.0,0.0,0.0,97.2,1.9,100.0,"WOLVERINE EXECUTION SERV, LLC",100.0,True,True,passive_retail|single_venue|no_pfof|abr,,30177_606_NMS_2026_Q1_CNTXT_V1_20260417.xml
+218,"MONEX SECURITIES, INC.",30362,0.0,0.0,0.0,0.0,43.9,53.7,100.0,"GLOBAL EXECUTION BROKERS, LP.",38.8,True,False,active_trader|no_pfof,,30362_606_NMS_2026_Q1_V1_20260422.xml
+219,PUENTE SERVICIOS FINANCIEROS LLC,304587,0.0,0.0,0.0,0.0,48.1,36.5,100.0,CITADEL SECURITIES LLC,41.6,True,True,no_pfof|abr,,304587_606_NMS_2026_Q1_CNTXT_MPID_V1_20260408.xml
+220,"Apex Fintech Brokerage Services, LLC",305818,0.0,0,0.0,0.0,99.9,0.0,100.0,"Virtu Americas, LLC",99.6,True,False,passive_retail|single_venue|no_pfof,,305818_606_NMS_2026_Q1_APEX_X82K_V1_20260427.xml
+221,Digital Brokerage Services LLC,308213,0.0,0,0.0,0.0,49.4,50.1,100.0,"Virtu Americas, LLC",42.9,True,False,active_trader|no_pfof,No PFOF per materialAspects — routes to exchanges,308213_606_NMS_2026_Q1_DIBS2_V2_20260417.xml
+222,"Clarksons Securities, Inc.",30882,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,30882_606_NMS_2026_Q1_V1_20260416.xml
+223,Mondeum Capital,309574,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,309574_606_NMS_2026_Q1_V1_20260408.xml
+224,SEMINARIO SECURITIES LLC,315218,0.0,0.0,0.0,0.0,61.6,37.0,100.0,DASH FINANCIAL OPTION ATS,27.8,True,True,passive_retail|no_pfof|abr,,315218_606_NMS_2026_Q1_CNTXT-MPID_V1_20260408.xml
+225,Atomic Brokerage LLC,315263,0.0,0,0.0,0.0,66.7,0.0,100.0,"VIRTU Americas, LLC",75.1,True,True,passive_retail|no_pfof|abr,,315263_606_NMS_2026_Q1_V1_20260430.xml
+226,"CIBEST CAPITAL SECURITIES, LLC",316232,0.0,0.0,0.0,0.0,62.7,34.6,100.0,CITADEL SECURITIES LLC,34.8,True,True,passive_retail|no_pfof|abr,,316232_606_NMS_2026_Q1_V1_20260420.xml
+227,Optiver Execution Services LLC,316308,0,0.0,0.0,0.0,0.0,0.0,100.0,"LAKESHORE SECURITIES, L.P.",53.2,True,False,no_pfof,,316308_606_NMS_2026_Q1_OPTU_V1_20260428.xml
+228,BERN - Sanford C Bernstein Co LLC - Institutional Research Services,317807,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,317807_606_NMS_2026_Q1_V1_20260417.xml
+229,KALA,32029,0.0,0,0.0,0.0,29.1,1.3,100.0,Fidelity Dynamic Liquidity Man,44.4,True,False,no_pfof,,32029_606_NMS_2026_Q1_V1_20260501.xml
+230,FIRST HEARTLAND CAPITAL INC,32460,0.0,0.0,0.0,0.0,97.0,1.9,100.0,"GLOBAL EXECUTION BROKERS, LP.",37.5,True,True,passive_retail|no_pfof|abr,,32460_606_NMS_2026_Q1_V1_20260420.xml
+231,MULL,32754,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,32754_606_NMS_2026_Q1_MULL_V1_20260423.xml
+232,iFAST Securities US Corporation,327903,0.0,0,0.0,0.0,1.2,24.9,100.0,"Virtu Americas, LLC",100.0,True,False,single_venue|no_pfof,,327903_606_NMS_2026_Q1_IFUS_V1_20260421.xml
+233,"PRIME EXECUTIONS, INC.",32889,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,32889_606_NMS_2026_Q1_SIBO_V1_20260408.xml
+234,STEPHENS INC,3496,0.0,0.0,0.0,0.0,95.7,3.5,100.0,CITADEL SECURITIES LLC,36.0,True,False,passive_retail|no_pfof,,3496_606_NMS_2026_Q1_V1_20260422.xml
+235,"OSAIC INSTITUTIONS, INC.",35371,0.0,0.0,0.0,0.0,97.6,2.1,100.0,CITADEL SECURITIES LLC,39.2,True,False,passive_retail|no_pfof,,35371_606_NMS_2026_Q1_V1_20260415.xml
+236,PURSHE KAPLAN STERLING,35747,0.0,0.0,0.0,0.0,78.9,21.1,100.0,Citadel Securities LLC,34.3,True,False,passive_retail|no_pfof,,35747_606_NMS_2026_Q1_V1_20260416.xml
+237,Susquehanna Financial Group LLP,35865,0,0.0,0.0,0.0,0.0,0.0,98.2,GEB,98.2,True,False,single_venue|no_pfof,,35865_606_NMS_2026_Q1_V1_20260428.xml
+238,Macquarie Capital (USA) Inc,36368,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,36368_606_NMS_2026_Q1_V1_20260407.xml
+239,FIRST COMMAND BROKERAGE SERVICES,3641,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,3641_606_NMS_2026_Q1_V1_20260403.xml
+240,PERSHING ADVISOR SOLUTIONS LLC,36671,0.0,0.0,0.0,0.0,89.4,1.8,100.0,CITADEL SECURITIES LLC,33.7,True,True,passive_retail|no_pfof|abr,,36671_606_NMS_2026_Q1_V1_20260518.xml
+241,Mischler Financial Group Inc,37818,0,0.0,0.0,0.0,0.0,0.0,100.0,INSTINET DESK CROSS,100.0,True,False,single_venue|no_pfof,,37818_606_NMS_2026_Q1_V1_20260408.xml
+242,FMN CAPITAL CORPORATION,38105,0.0,0,0.0,0.0,99.1,0.9,100.0,"G1 Execution Services, LLC",23.2,True,True,passive_retail|no_pfof|abr,,38105_606_NMS_2026_Q1_V1_20260427.xml
+243,"LEIGH BALDWIN & CO., LLC",38751,0.0,0.0,0.0,0.0,81.3,17.2,100.0,Citadel Securities LLC,33.4,True,False,passive_retail|no_pfof,,38751_606_NMS_2026_Q1_V1_20260430.xml
+244,Beta Capital Securities LLC,38964,0.0,0.0,0.0,0.0,33.9,8.1,100.0,VIRTU FINANCIAL BD,100.0,True,False,single_venue|no_pfof,,38964_606_NMS_2026_Q1_V1_20260430.xml
+245,LEER,39011,0,0.0,0.0,0.0,0.0,0.0,64.8,Philadelphia Stock Exchange,11.0,True,False,no_pfof,,39011_606_NMS_2026_Q1_V1_20260430.xml
+246,"FINANCIAL SENSE SECURITIES, INC.",39301,0.0,0.0,0.0,0.0,93.0,0.9,100.0,National Financial Services LLC,45.2,True,False,passive_retail|no_pfof,,39301_606_NMS_2026_Q1_V1_20260415.xml
+247,NASC,39455,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,39455_606_NMS_2026_Q1_V1_20260401.xml
+248,"CHURCHILL FINANCIAL, LLC",39462,0.0,0.0,0.0,0.0,100.0,0.0,100.0,Citadel Securities LLC,31.4,True,True,passive_retail|no_pfof|abr,,39462_606_NMS_2026_Q1_V1_20260421.xml
+249,CAMBRIDGE INVESTMENT RESEARCH,39543,0.0,0.0,0.0,0.0,97.0,2.7,100.0,Citadel Securities LLC,36.4,True,False,passive_retail|no_pfof,,39543_606_NMS_2026_Q1_CNTXT-NFSC_V1_20260506.xml
+250,CITIZENS SECURITIES INC.,39550,0.0,0.0,0.0,0.0,99.5,0.5,100.0,Citadel Securities LLC,40.5,True,True,passive_retail|no_pfof|abr,,39550_606_NMS_2026_Q1_V1_20260420.xml
+251,West Park Capital,39914,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,39914_606_NMS_2026_Q1_WPRK_V1_20260416.xml
+252,Bay Crest Partners LLC,39944,0,0.0,0.0,0.0,0.0,0.0,66.5,Dash Financial Technologies LLC,39.9,True,False,no_pfof,,39944_606_NMS_2026_Q1_V1_20260430.xml
+253,EFGC,40118,0.0,0.0,0.0,0.0,92.6,3.9,100.0,NEWEDGE SECURITIES INC,100.0,True,True,passive_retail|single_venue|no_pfof|abr,,40118_606_NMS_2026_Q1_CNTXT-EFGBank_V1_20260407.xml
+254,NORTHLAND SECURITIES INC,40258,0.0,0.0,0.0,0.0,72.2,27.0,100.0,CITADEL SECURITIES LLC,41.1,True,False,passive_retail|no_pfof,,40258_606_NMS_2026_Q1_V1_20260413.xml
+255,"ALTERNA SECURITIES, INC.",41139,0.0,0.0,0.0,0.0,80.5,6.9,100.0,CITADEL SECURITIES LLC,32.8,True,True,passive_retail|no_pfof|abr,,41139_606_NMS_2026_Q1_V1_20260414.xml
+256,SANTANDER INVESTMENT SERVICES,41791,0.0,0,0.0,0.0,99.3,0.6,100.0,"G1 Execution Services, LLC",19.6,True,False,passive_retail|no_pfof,,41791_606_NMS_2026_Q1_V1_20260417.xml
+257,"KESTRA INVESTMENT SERVICES, LLC",42046,0.0,0.0,0.0,0.0,96.9,2.8,100.0,Citadel Securities LLC,39.4,True,False,passive_retail|no_pfof,,42046_606_NMS_2026_Q1_V1_20260415.xml
+258,"OBERWEIS SECURITIES, INC.",42060,0.0,0.0,0.0,0.0,85.0,15.0,100.0,Citadel Securities LLC,33.6,True,True,passive_retail|no_pfof|abr,,42060_606_NMS_2026_Q1_V1_20260416.xml
+259,"SUNBELT SECURITIES, INC.",42180,0.0,0.0,0.0,0.0,83.5,16.5,100.0,Citadel Securities LLC,35.6,True,True,passive_retail|no_pfof|abr,,42180_606_NMS_2026_Q1_V1_20260416.xml
+260,"VALIC FINANCIAL ADVISORS, INC.",42803,0.0,0,0.0,0.0,99.8,0.2,100.0,"G1 Execution Services, LLC",21.4,True,False,passive_retail|no_pfof,,42803_606_NMS_2026_Q1_CNTXT-INFO_V1_20260416.xml
+261,STATE FARM VP MANAGEMENT CORP,43036,0.0,0,0.0,0.0,99.7,0.0,100.0,CITADEL SECURITIES LLC,24.7,True,True,passive_retail|no_pfof|abr,,43036_606_NMS_2026_Q1_V1_20260416.xml
+262,Loop Capital,43098,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,43098_606_NMS_2026_Q1_V1_20260401.xml
+263,WTCO,43678,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,43678_606_NMS_2026_Q1_V1_20260430.xml
+264,Lampost Capital,43706,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,43706_606_NMS_2026_Q1_LAMP_V2_20260415.xml
+265,"Imperial Capital, LLC",43744,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,43744_606_NMS_2026_Q1_V1_20260409.xml
+266,NESBITT BURNS SECURITIES LIMITED,44057,0.0,0,0.0,0.0,99.4,0.5,100.0,"G1 Execution Services, LLC",22.0,True,False,passive_retail|no_pfof,,44057_606_NMS_2026_Q1_V2_20260423.xml
+267,Capital One Securities Inc,44158,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,True,no_pfof|abr,,44158_606_NMS_2026_Q1_V1_20260417.xml
+268,FIRST CITIZENS INVESTOR SERVICES,44430,0.0,0.0,0.0,0.0,95.0,3.7,100.0,CITADEL SECURITIES LLC,47.3,True,False,passive_retail|no_pfof,,44430_606_NMS_2026_Q1_V1_20260409.xml
+269,"HOLISTIC BROKERAGE, LLC",46001,0.0,0.0,0.0,0.0,81.4,17.1,100.0,CITADEL SECURITIES LLC,33.4,True,False,passive_retail|no_pfof,,46001_606_NMS_2026_Q1_V1_20260526.xml
+270,PARK AVENUE SECURITIES LLC,46173,0.0,0.0,0.0,0.0,99.8,0.2,100.0,CITADEL SECURITIES LLC,30.1,True,False,passive_retail|no_pfof,,46173_606_NMS_2026_Q1_V1_20260428.xml
+271,"Janney Montgomery Scott, Inc.",463,0.0,0.0,0.0,0.0,92.0,2.5,100.0,Global Execution Brokers LP,50.2,True,False,passive_retail|no_pfof,No PFOF per materialAspects — routes to exchanges,463_606_NMS_2026_Q1_JANY_V1_20260415.xml
+272,"Ferretti Group, Inc",47768,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,47768_606_NMS_2026_Q1_V1_20260409.xml
+273,"Keefe Bruette & Woods, Inc.",481,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,481_606_NMS_2026_Q1_KBWI_V1_20260428.xml
+274,NYLIFE SECURITIES LLC.,5167,0.0,0.0,0.0,0.0,98.8,1.1,100.0,Citadel Securities LLC,38.1,True,False,passive_retail|no_pfof,,5167_606_NMS_2026_Q1_V1_20260417.xml
+275,KEYB,566,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,566_606_NMS_2026_Q1_20260408174923939_V1_20260413.xml
+276,Paulson Investment Company  Inc,5670,0.0,0,0.0,0.0,80.3,3.0,100.0,CDRG,100.0,True,False,passive_retail|single_venue|no_pfof,,5670_606_NMS_2026_Q1_V1_20260428.xml
+277,"VANDERBILT SECURITIES, LLC",5953,0.0,0.0,0.0,0.0,87.6,10.6,100.0,Citadel Securities LLC,37.6,True,False,passive_retail|no_pfof,,5953_606_NMS_2026_Q1_V1_20260423.xml
+278,rhco,6271,0.0,0,0.0,0.0,0.0,0.0,31.0,NASDAQ – All Markets,55.4,True,False,no_pfof,,6271_606_NMS_2026_Q1_V1_20260429.xml
+279,FTSR,628,0.0,0.0,0.0,0.0,75.2,24.1,100.0,CITADEL SECURITIES LLC,35.7,True,False,passive_retail|no_pfof,No PFOF per materialAspects — routes to exchanges,628_606_NMS_2026_Q1_CNTXT-FTSR_V1_20260427.xml
+280,LPL FINANCIAL,6413,0.0,0.0,0.0,0.0,92.0,1.6,100.0,"Susquehanna Financial Group, LLP",30.0,True,False,passive_retail|no_pfof,,6413_606_NMS_2026_Q1_LPL_LPL_V1_20260430.xml
+281,EQUITABLE,6627,0.0,0.0,0.0,0.0,85.6,3.5,100.0,"Susquehanna Financial Group, LLP",36.3,True,False,passive_retail|no_pfof,,6627_606_NMS_2026_Q1_EQH_V1_20260424.xml
+282,JONE,6888,0,0.0,0.0,0.0,0.0,0.0,2.8,NYSE ARCA Options,85.9,True,False,single_venue|no_pfof,,6888_606_NMS_2026_Q1_V1_20260430.xml
+283,"Citigroup Global Markets Inc. (""CGMI"") Wealth",7059,0.0,0.0,0.0,0.0,63.3,33.2,100.0,CITADEL SECURITIES LLC,32.0,True,False,passive_retail|no_pfof,,7059_606_NMS_2026_Q1_CNTXT-CGWM_V1_20260430.xml
+284,"LASALLE ST. SECURITIES, L.L.C.",7191,0.0,0.0,0.0,0.0,77.2,20.8,100.0,Citadel Securities LLC,33.8,True,False,passive_retail|no_pfof,,7191_606_NMS_2026_Q1_V1_20260415.xml
+285,G. Research,7353,0.0,0,0.0,0.0,71.7,28.3,100.0,First Clearing,100.0,True,False,passive_retail|single_venue|no_pfof,,7353_606_NMS_2026_Q1_V1_20260430.xml
+286,Vanguard Brokerage Services,7452,0.0,0.0,0.0,0.0,61.3,36.5,100.0,Wolverine Execution Svc. (WEXX),46.8,True,False,passive_retail|no_pfof,,7452_606_NMS_2026_Q1_V1_20260427.xml
+287,SECURITIES MANAGEMENT & RESEARCH,759,0.0,0.0,0.0,0.0,69.5,30.5,100.0,Dash Financial Technologies LLC,100.0,True,False,passive_retail|single_venue|no_pfof,,759_606_NMS_2026_Q1_V1_20260501.xml
+288,"Gordon, Haskett Capital Corp.",7976,0,0,0,0.0,0.0,0.0,0.0,,0.0,True,False,no_pfof,,7976_606_NMS_2026_Q1_V1_20260413.xml
+289,POPULAR SECURITIES,8096,0.0,0.0,0.0,0.0,89.4,10.3,100.0,Citadel Securities LLC,38.1,True,False,passive_retail|no_pfof,,8096_606_NMS_2026_Q1_V1_20260415.xml
+290,"Robert W. Baird & Co., Inc.",8158,0.0,0.0,0.0,0.0,93.8,1.5,100.0,Citadel Execution Services,70.0,True,False,passive_retail|no_pfof,No PFOF per materialAspects — routes to exchanges,8158_606_NMS_2026_Q1_BARD_V1_20260409.xml
+291,Morgan Stanley & Co.,8209,0,0.0,0.0,0.0,0.0,0.0,9.8,NYSE ARCA OPTIONS,56.5,True,False,no_pfof,,8209_606_NMS_2026_Q1_V1_20260430.xml
+292,T.ROWE PRICE,8348,0.0,0.0,0.0,0.0,59.3,31.8,100.0,CITADEL SECURITIES LLC,36.4,True,False,no_pfof,,8348_606_NMS_2026_Q1_V1_20260415.xml
+293,LPL ENTERPRISE,8733,0.0,0.0,0.0,0.0,81.6,2.6,100.0,CITADEL SECURITIES LLC,30.5,True,False,passive_retail|no_pfof,,8733_606_NMS_2026_Q1_LPL_LPLE_V1_20260430.xml
+294,GARW,138033,-1.0,0,-1.0,-0.0,0.0,33.3,100.0,"Paulson Investment Company, In",100.0,False,True,single_venue|abr,,138033_606_NMS_2026_Q1_CNTXT-GARW_V1_20260430.xml
+295,PIER,313305,-1.34,0,-1.34,-0.0,90.2,9.6,100.0,"Virtu Americas, LLC",34.3,False,False,passive_retail,,313305_606_NMS_2026_Q1_PIER_V1_20260420.xml
+296,GLXY,330599,0,-5.0,-5.0,100.0,0.0,0.0,100.0,"Clear Street, LLC",100.0,False,False,options_heavy|single_venue,,330599_606_NMS_2026_Q1_GLXY_V1_20260430.xml
+297,Ladenburg Thalmann & Co. Inc (“LTCO”),505,0.0,-35.0,-35.0,100.0,0.0,0.0,100.0,AMXO,100.0,False,False,options_heavy|single_venue,,505_606_NMS_2026_Q1_V1_20260429.xml
+298,MDB Capital,42677,-47.0,0.0,-47.0,-0.0,0.0,99.8,73.3,Nasdaq ISE,71.6,False,False,active_trader,,42677_606_NMS_2026_Q1_MDBC_V2_20260430.xml
+299,"York Stockbrokers, Inc.",102740,-49.0,0,-49.0,-0.0,0.0,100.0,47.5,CBOE EDGX Exchange,28.7,False,False,active_trader,,102740_606_NMS_2026_Q1_V1_20260430.xml
+300,Seaport Global Securities LLC,116270,0.0,-89.38,-89.38,100.0,16.7,0.0,100.0,VIRTU AMERICAS LLC,100.0,False,False,options_heavy|single_venue,,116270_606_NMS_2026_Q1_V1_20260430.xml
+301,Wellington Shields,149021,-3.1,-111.75,-114.85,97.3,88.5,9.7,100.0,CDRG,40.4,False,False,options_heavy|passive_retail,,149021_606_NMS_2026_Q1_V1_20260430.xml
+302,ZacksTrade,7874,-1528.0,1401.0,-127.0,-1103.1,0.0,98.9,71.8,CBOE EDGX Exchange,27.3,False,False,active_trader,,7874_606_NMS_2026_Q1_V1_20260429.xml
+303,ONEL,894,0,-128.68,-128.68,100.0,0.0,0.0,100.0,ARCO,21.2,False,False,options_heavy,,894_606_NMS_2026_Q1_V1_20260430.xml
+304,GPC,114203,0,-850.0,-850.0,100.0,0.0,0.0,96.6,NYSE ARCA OPTIONS,36.7,False,False,options_heavy,,114203_606_NMS_2026_Q1_GPC_V1_20260429.xml
+305,"X-Change Financial Access, LLC",126201,0,-1272.93,-1272.93,100.0,0.0,0.0,19.4,CBOE GLOBAL MARKETS INC.,57.9,False,False,options_heavy,,126201_606_NMS_2026_Q1_V1_20260430.xml
+306,Cannacord Genuity Inc.,1020,-15.95,-2029.5,-2045.45,99.2,2.2,5.5,100.0,"Morgan Stanley & Co., LLC",70.3,False,False,options_heavy,,1020_606_NMS_2026_Q1_ADAM_V1_20260429.xml
+307,"Clear Street, LLC",288933,0.0,-3028.13,-3028.13,100.0,0.4,0.0,100.0,"Clear Street, LLC",52.0,False,False,options_heavy,,288933_606_NMS_2026_Q1_CLST_V1_20260430.xml
+308,Cash App Investing,144076,-3784.99,0,-3784.99,-0.0,100.0,0.0,100.0,"Virtu Americas, LLC",100.0,False,False,passive_retail|single_venue,,144076_606_NMS_2026_Q1_TPTG_V1_20260429.xml
+309,A.G.P./Alliance Global Partners,8361,-4332.48,106.41,-4226.06,-2.5,40.2,6.0,100.0,National Financial Services LL,48.1,False,False,,,8361_606_NMS_2026_Q1_V1_20260501.xml
+310,Raymond James,705,0,-5329.45,-5329.45,100.0,0.0,0.0,92.0,Dash/IMC Financial Markets,16.5,False,False,options_heavy,,705_606_NMS_2026_Q1_RAJA_CNTXT-OPTIONS_V2_20260429.xml
+311,Jane Street Execution Services,167280,0,-5499.41,-5499.41,100.0,0.0,0.0,92.9,Boston Options Exchange,32.5,False,False,options_heavy,,167280_606_NMS_2026_Q1_JSEB_V2_20260515.xml
+312,Northern Trust Securities Inc,7927,-5996.97,0.0,-5996.97,-0.0,73.4,16.6,100.0,"CLEARPOOL EXECUTION SERVICES, LLC",87.6,False,False,passive_retail|single_venue,,7927_606_NMS_2026_Q1_V1_20260430.xml
+313,GTS Execution Services LLC,306364,0,-6182.15,-6182.15,100.0,0.0,0.0,100.0,Global Execution Brokers LP,92.5,False,False,options_heavy|single_venue,,306364_606_NMS_2026_Q1_GTEX_V1_20260430.xml
+314,Mizuho Securities USA,19647,0,-8331.52,-8331.52,100.0,0.0,0.0,96.8,MEMX LLC,94.6,False,False,options_heavy|single_venue,,19647_606_NMS_2026_Q1_MZHO_V1_20260424.xml
+315,Capis Trading,7551,0,-8780.97,-8780.97,100.0,0.0,0.0,100.0,"Bofa Securities, Inc.",100.0,False,False,options_heavy|single_venue,,7551_606_NMS_2026_Q1_V1_20260422.xml
+316,"Roth Capital Partners, LLC",15407,0.0,-10012.69,-10012.69,100.0,0.0,0.0,100.0,"Goldman, Sachs & Co.",100.0,False,False,options_heavy|single_venue,,15407_606_NMS_2026_Q1_ROTH_V1_20260430.xml
+317,NATIONAL FINANCIAL SERVICES LLC,13041,-10342.0,0.0,-10342.0,-0.0,97.1,2.7,100.0,National Financial Services LLC,20.8,False,True,passive_retail|abr,,13041_606_NMS_2026_Q1_V1_20260430.xml
+318,"BTIG, LLC",122225,0,-11025.54,-11025.54,100.0,0.0,0.0,93.2,NYSE ARCA OPTIONS,36.8,False,False,options_heavy,,122225_606_NMS_2026_Q1_BTIG_V1_20260430.xml
+319,Marex Capital Markets Inc.  CCMB,161014,0,-13153.08,-13153.08,100.0,0.0,0.0,83.5,NYSE ARCA OPTIONS,64.2,False,False,options_heavy,,161014_606_NMS_2026_Q1_CNTXT-CCMB_V1_20260429.xml
+320,PIPER SANDLER AND CO.,665,0,-13964.57,-13964.57,100.0,0.0,0.0,25.3,NYSE ARCA OPTIONS,12.6,False,False,options_heavy,,665_606_NMS_2026_Q1_PROD_V1_20260430.xml
+321,"JP Morgan Securities, LLC",79,-15523.38,0.0,-15523.38,-0.0,64.6,30.9,100.0,Dash/IMC Financial Markets,44.1,False,False,passive_retail,,79_606_NMS_2026_Q1_JPMS_V1_20260430.xml
+322,UBS Financial Services Inc,8174,0.0,-16022.35,-16022.35,100.0,83.4,13.3,100.0,"GLOBAL EXECUTION BROKERS, LP",29.1,False,False,options_heavy|passive_retail,,8174_606_NMS_2026_Q1_V1_20260416.xml
+323,XPUS,156691,-17189.9,0.0,-17189.9,-0.0,76.8,0.1,100.0,Nasdaq PHLX,77.9,False,False,passive_retail,,156691_606_NMS_2026_Q1_V2_20260430.xml
+324,Wells Fargo Securities LLC [WCHV],126292,-11232.83,-9244.06,-20476.89,45.1,91.9,5.0,100.0,INTELLIGENTCROSS,65.9,False,False,options_heavy|passive_retail,,126292_606_NMS_2026_Q1_V1_20260420.xml
+325,Aegis Capital Corp - AGIS,15007,-20615.23,-4742.4,-25357.63,18.7,91.1,8.4,100.0,Citadel Securities LLC,72.2,False,True,passive_retail|abr,,15007_606_NMS_2026_Q1_V1_20260501.xml
+326,Nomura,4297,0,-27964.3,-27964.3,100.0,0.0,0.0,100.0,INSTINET,94.8,False,False,options_heavy|single_venue,,4297_606_NMS_2026_Q1_V1_20260427.xml
+327,"Guggenheim Securities, LLC",40638,0,-28166.74,-28166.74,100.0,0.0,0.0,94.9,"Cboe EDGX Exchange, Inc.",27.7,False,False,options_heavy,,40638_606_NMS_2026_Q1_GUGGOPT_V2_20260429.xml
+328,WallachBeth Capital 606,147853,0,-30773.4,-30773.4,100.0,0.0,0.0,100.0,RSKY,85.3,False,False,options_heavy|single_venue,,147853_606_NMS_2026_Q1_V1_20260429.xml
+329,Cobra Trading,132078,-22419.63,-15766.91,-38186.54,41.3,30.9,69.1,100.0,LAMPOST CAPITAL (LAMP),100.0,False,False,options_heavy|active_trader|single_venue,,132078_606_NMS_2026_Q1_V1_20260430.xml
+330,Glendal Securities,123649,-78045.4,0,-78045.4,-0.0,0.5,99.5,100.0,NYSE ARCA (ARCA),55.1,False,False,active_trader,,123649_606_NMS_2026_Q1_V1_20260430.xml
+331,DASH Financial Technologies LLC,104031,466.87,-106355.83,-105888.96,100.4,24.7,37.6,100.0,NYSE Arca,57.3,False,False,options_heavy,,104031_606_NMS_2026_Q1_V1_20260422.xml
+332,Lightspeed Financial Services Group LLC,104369,2728.11,-139332.79,-136604.68,102.0,24.3,53.4,100.0,"Wolverine Execution Services, LLC",48.3,False,False,options_heavy|active_trader,,104369_606_NMS_2026_Q1_LSPS_V1_20260428.xml
+333,HSBC Securities,19585,-183952.65,-5674.05,-189626.7,3.0,0.8,97.1,100.0,Interactive Brokers LLC,81.0,False,True,active_trader|single_venue|abr,,19585_606_NMS_2026_Q1_HSBC_V1_20260430.xml
+334,"SG Americas Securities, LLC",128351,0,-219526.41,-219526.41,100.0,0.0,0.0,100.0,"Cboe Exchange, Inc.",36.8,False,False,options_heavy,,128351_606_NMS_2026_Q1_V1_20260430.xml
+335,Vision Financial Markets LLC,142271,-275861.11,-28133.06,-303994.17,9.3,38.1,52.8,100.0,Citadel Securities,64.8,False,False,active_trader,,142271_606_NMS_2026_Q1_V1_20260429.xml
+336,MLCO.606_NEW,283942,0,-373044.22,-373044.22,100.0,0.0,0.0,98.4,"Wolverine Execution Services, LLC",50.3,False,True,options_heavy|abr,,283942_606_NMS_2026_Q1_V1_20260430.xml
+337,"Matrix Executions, LLC",38455,0,-795770.18,-795770.18,100.0,0.0,0.0,95.8,"Cboe EDGX Exchange, Inc.",25.1,False,False,options_heavy,,38455_606_NMS_2026_Q1_RSKY_V1_20260430.xml
+338,Tickrs,312531,-344622.28,-673449.48,-1018071.76,66.1,2.3,97.7,100.0,CODA MARKETS (CODA),77.0,False,False,options_heavy|active_trader,,312531_606_NMS_2026_Q1_V1_20260430.xml
+339,Goldman Sachs & Co. LLC,361,-69338.84,-1245840.01,-1315178.85,94.7,1.6,94.5,91.4,Members Exchange,56.9,False,False,options_heavy|active_trader,,361_606_NMS_2026_Q1_V1_20260430.xml
+340,"Open to the Public Investing, Inc.",127818,-681741.0,-827574.75,-1509315.75,54.8,78.5,18.9,100.0,Jane Street Capital,29.3,False,False,options_heavy|passive_retail,,127818_606_NMS_2026_Q1_TTSI_V1_20260501.xml
+341,Citadel Securities Institutional LLC,281102,0,-2323606.94,-2323606.94,100.0,0.0,0.0,100.0,CDRG(EV/SRV),100.0,False,False,options_heavy|single_venue,,281102_606_NMS_2026_Q1_V1_20260422.xml
+342,INCA,7897,0,-2937435.85,-2937435.85,100.0,0.0,0.0,6.0,Nasdaq Options,70.1,False,False,options_heavy,,7897_606_NMS_2026_Q1_V1_20260430.xml
+343,"UBS Securities, LLC",7654,-3936423.25,18714.3,-3917708.95,-0.5,0.1,74.2,100.0,"UBS Securities, LLC ATS",25.6,False,False,active_trader,,7654_606_NMS_2026_Q1_UBSS_V1_20260429.xml
+344,Wolverine Execution Services,120719,0.0,-8662386.81,-8662386.81,100.0,0.0,0.0,42.7,MEMX Options Exchange,14.5,False,False,options_heavy,,120719_606_NMS_2026_Q1_V1_20260430.xml
