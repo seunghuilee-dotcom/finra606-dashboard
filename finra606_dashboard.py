@@ -108,7 +108,11 @@ with st.sidebar:
         "| 매년 5/5 | 당해 Q1 |\n"
         "| 매년 8/5 | 당해 Q2 |\n"
         "| 매년 11/5 | 당해 Q3 |\n\n"
-        "자동 갱신: `finra606_quarterly.sh` (cron)"
+        "자동 갱신: `finra606_quarterly.sh` (cron)\n\n"
+        "---\n\n"
+        "**커버리지 한계**\n\n"
+        "Rule 606(a)는 **held order** (시장가·지정가 등 고객 지정 주문) 만 적용.\n"
+        "DriveWealth 등 not-held order 처리 B2B 브로커는 공시 의무 없음 → 이 데이터에 미포함."
     )
 
 # 태그 필터 적용
@@ -139,8 +143,11 @@ with tab1:
 PFOF = 브로커가 Citadel·Virtu 등 인터널라이저에 주문을 보낼 때 받는 수수료.
 거래량이 많을수록 PFOF가 높아 리테일 브로커 규모의 proxy로 활용됩니다.
 
-> ⚠️ **주의:** Fidelity·Vanguard 등 no-PFOF 브로커는 하단에 위치하나 실제 거래량은 상위권.
-> `tags` 컬럼의 `no_pfof` 태그로 구분됩니다.
+> ⚠️ **주의 — 이 데이터에 "없는" 브로커가 있음:**
+>
+> **① no-PFOF 브로커** (Fidelity·Vanguard 등): 거래소 직접 라우팅으로 PFOF=$0이지만 실거래량은 상위권. 데이터는 있으나 랭킹 하단. `no_pfof` 태그로 구분.
+>
+> **② Not-held order 브로커** (DriveWealth 등 B2B API): Rule 606(a)는 **held order** (시장가·지정가 — 고객이 가격·시간 조건을 직접 지정한 주문) 에만 적용됨. Not-held order (VWAP·알고리즘·B2B API 위임 주문) 처리 브로커는 분기 공시 의무 자체가 없음 → 데이터에 아예 없음.
 
 **🏷 태그 의미**
 
@@ -150,7 +157,7 @@ PFOF = 브로커가 Citadel·Virtu 등 인터널라이저에 주문을 보낼 �
 | `active_trader` | limit order 비중 ≥ 50% | 능동적 트레이더 고객층 |
 | `passive_retail` | market order 비중 ≥ 60% | 수동적 리테일 고객층 |
 | `single_venue` | 특정 인터널라이저 집중도 ≥ 80% | 독점 계약 의심 → BD 접근 어려울 수 있음 |
-| `no_pfof` | PFOF 총액 = 0 | 거래소 직접 라우팅 (거래량 추적 불가) |
+| `no_pfof` | PFOF 총액 = 0 | 거래소 직접 라우팅 (실거래량 있음, 추적 불가) |
         """)
     active = ov[ov["pfof_total_usd"] != 0]
     top1_options = ov.nlargest(1, "pfof_options_usd")
