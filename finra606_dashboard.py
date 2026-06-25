@@ -61,6 +61,17 @@ def available_quarters():
         reverse=True,
     )
 
+
+def selected_total(df, eq_col, opt_col, show_eq, show_opt):
+    """사이드바 Equity/Options 토글에 따라 합산 컬럼 계산"""
+    eq = df[eq_col].fillna(0) if eq_col in df.columns else 0
+    opt = df[opt_col].fillna(0) if opt_col in df.columns else 0
+    if show_eq and show_opt:
+        return eq + opt
+    if show_eq:
+        return eq
+    return opt
+
 # ─── 페이지 설정 ────────────────────────────────────────────────────────────
 
 st.set_page_config(
@@ -98,6 +109,20 @@ with st.sidebar:
     )
     top_n = st.slider("브로커 랭킹 상위 N개", 10, 50, 20)
     st.caption(f"데이터: {selected_qtr.replace('_', ' ')}")
+
+    st.divider()
+    st.subheader("자산유형 필터")
+    show_equity = st.checkbox("📈 Equity (주식)", value=True)
+    show_options = st.checkbox("📊 Options (옵션)", value=True)
+    if not show_equity and not show_options:
+        st.warning("최소 1개는 켜야 함 — Equity로 복원")
+        show_equity = True
+    st.caption(
+        "켜진 항목만 랭킹·차트·합계에 반영됨 (탭1·2·5에 적용). "
+        "탭3(옵션 거래소)은 Options를 끄면 비활성화, "
+        "탭4(의존도 매트릭스)는 데이터 구조상 항상 Equity+Options 합산."
+    )
+
     st.divider()
     st.caption(
         "**데이터 업데이트 주기**\n\n"
@@ -159,43 +184,61 @@ PFOF = 브로커가 Citadel·Virtu 등 인터널라이저에 주문을 보낼 �
 | `single_venue` | 특정 인터널라이저 집중도 ≥ 80% | 독점 계약 의심 → BD 접근 어려울 수 있음 |
 | `no_pfof` | PFOF 총액 = 0 | 거래소 직접 라우팅 (실거래량 있음, 추적 불가) |
         """)
-    active = ov[ov["pfof_total_usd"] != 0]
-    top1_options = ov.nlargest(1, "pfof_options_usd")
+    ov = ov.copy()
+    ov["__sel_total__"] = selected_total(ov, "pfof_equity_usd", "pfof_options_usd", show_equity, show_options)
+    active = ov[ov["__sel_total__"] != 0]
+
+    sel_label = "Equity+Options" if (show_equity and show_options) else ("Equity" if show_equity else "Options")
 
     col1, col2, col3 = st.columns(3)
-    col1.metric("총 PFOF (활성 브로커)", fmt_usd(active["pfof_total_usd"].sum()))
+    col1.metric(f"총 PFOF · {sel_label} (활성 브로커)", fmt_usd(active["__sel_total__"].sum()))
     col2.metric("활성 브로커 수", f"{len(active)}개")
-    col3.metric(
-        "Options PFOF 1위",
-        top1_options["broker_name"].values[0] if len(top1_options) else "-",
-        fmt_usd(top1_options["pfof_options_usd"].values[0]) if len(top1_options) else "",
-    )
+    if show_options:
+        top1_options = ov.nlargest(1, "pfof_options_usd")
+        col3.metric(
+            "Options PFOF 1위",
+            top1_options["broker_name"].values[0] if len(top1_options) else "-",
+            fmt_usd(top1_options["pfof_options_usd"].values[0]) if len(top1_options) else "",
+        )
+    else:
+        top1_equity = ov.nlargest(1, "pfof_equity_usd")
+        col3.metric(
+            "Equity PFOF 1위",
+            top1_equity["broker_name"].values[0] if len(top1_equity) else "-",
+            fmt_usd(top1_equity["pfof_equity_usd"].values[0]) if len(top1_equity) else "",
+        )
 
     st.divider()
 
-    # 상위 N개 막대 차트
-    plot_df = ov_filtered.nlargest(top_n, "pfof_total_usd").copy()
+    # 상위 N개 막대 차트 — 사이드바 Equity/Options 토글 반영, 선택된 합계 기준 랭킹
+    ov_filtered = ov_filtered.copy()
+    ov_filtered["__sel_total__"] = selected_total(
+        ov_filtered, "pfof_equity_usd", "pfof_options_usd", show_equity, show_options
+    )
+    plot_df = ov_filtered.nlargest(top_n, "__sel_total__").copy()
     plot_df["broker_short"] = plot_df["broker_name"].str[:35]
 
     fig = go.Figure()
-    fig.add_trace(go.Bar(
-        y=plot_df["broker_short"],
-        x=plot_df["pfof_equity_usd"],
-        name="Equity PFOF",
-        orientation="h",
-        marker_color="#4A90D9",
-        text=plot_df["pfof_equity_usd"].apply(fmt_usd),
-        textposition="inside",
-    ))
-    fig.add_trace(go.Bar(
-        y=plot_df["broker_short"],
-        x=plot_df["pfof_options_usd"],
-        name="Options PFOF",
-        orientation="h",
-        marker_color="#F5A623",
-        text=plot_df["pfof_options_usd"].apply(fmt_usd),
-        textposition="inside",
-    ))
+    if show_equity:
+        fig.add_trace(go.Bar(
+            y=plot_df["broker_short"],
+            x=plot_df["pfof_equity_usd"],
+            name="Equity PFOF",
+            orientation="h",
+            marker_color="#4A90D9",
+            text=plot_df["pfof_equity_usd"].apply(fmt_usd),
+            textposition="inside",
+        ))
+    if show_options:
+        fig.add_trace(go.Bar(
+            y=plot_df["broker_short"],
+            x=plot_df["pfof_options_usd"],
+            name="Options PFOF",
+            orientation="h",
+            marker_color="#F5A623",
+            text=plot_df["pfof_options_usd"].apply(fmt_usd),
+            textposition="inside",
+        ))
     fig.update_layout(
         barmode="stack",
         height=max(400, top_n * 28),
@@ -208,12 +251,14 @@ PFOF = 브로커가 Citadel·Virtu 등 인터널라이저에 주문을 보낼 �
 
     # 테이블
     st.subheader("브로커 상세")
-    tbl = ov_filtered[["rank", "broker_name", "pfof_equity_usd", "pfof_options_usd",
-                         "pfof_total_usd", "options_mix_pct", "internalization_rate",
-                         "top_internalizer", "top_internalizer_pct", "tags", "note"]].copy()
+    tbl = ov_filtered.sort_values("__sel_total__", ascending=False)[
+        ["rank", "broker_name", "pfof_equity_usd", "pfof_options_usd",
+         "pfof_total_usd", "options_mix_pct", "internalization_rate",
+         "top_internalizer", "top_internalizer_pct", "tags", "note"]
+    ].copy()
     for col in ["pfof_equity_usd", "pfof_options_usd", "pfof_total_usd"]:
         tbl[col] = tbl[col].apply(fmt_usd)
-    tbl.columns = ["Rank", "브로커", "Equity PFOF", "Options PFOF", "Total PFOF",
+    tbl.columns = ["Rank", "브로커", "Equity PFOF", "Options PFOF", "Total PFOF(전체)",
                    "Options Mix%", "내부화율%", "주요 인터널라이저", "집중도%", "태그", "비고"]
     st.dataframe(tbl, use_container_width=True, hide_index=True)
 
@@ -237,15 +282,23 @@ with tab2:
     if intl.empty:
         st.info("데이터 없음")
     else:
-        # 상위 15개만
-        top_intl = intl.nlargest(15, "total_pfof_received_usd")
+        intl = intl.copy()
+        intl["__sel_total__"] = selected_total(
+            intl, "equity_pfof_usd", "options_pfof_usd", show_equity, show_options
+        )
+        # 시장 점유율은 선택된 카테고리 합산 기준으로 재계산 (전체 venue 대비)
+        denom = intl["__sel_total__"].sum()
+        intl["__sel_share_pct__"] = (intl["__sel_total__"] / denom * 100) if denom else 0
+
+        # 상위 15개만 — 선택된 합계 기준 랭킹
+        top_intl = intl.nlargest(15, "__sel_total__")
 
         col_a, col_b = st.columns([1, 1])
         with col_a:
             st.subheader("시장 점유율")
             fig_pie = px.pie(
                 top_intl,
-                values="market_share_pct",
+                values="__sel_share_pct__",
                 names="venue_name",
                 hole=0.4,
             )
@@ -256,20 +309,22 @@ with tab2:
         with col_b:
             st.subheader("Equity vs Options PFOF")
             fig_bar = go.Figure()
-            fig_bar.add_trace(go.Bar(
-                y=top_intl["venue_name"].str[:30],
-                x=top_intl["equity_pfof_usd"],
-                name="Equity",
-                orientation="h",
-                marker_color="#4A90D9",
-            ))
-            fig_bar.add_trace(go.Bar(
-                y=top_intl["venue_name"].str[:30],
-                x=top_intl["options_pfof_usd"],
-                name="Options",
-                orientation="h",
-                marker_color="#F5A623",
-            ))
+            if show_equity:
+                fig_bar.add_trace(go.Bar(
+                    y=top_intl["venue_name"].str[:30],
+                    x=top_intl["equity_pfof_usd"],
+                    name="Equity",
+                    orientation="h",
+                    marker_color="#4A90D9",
+                ))
+            if show_options:
+                fig_bar.add_trace(go.Bar(
+                    y=top_intl["venue_name"].str[:30],
+                    x=top_intl["options_pfof_usd"],
+                    name="Options",
+                    orientation="h",
+                    marker_color="#F5A623",
+                ))
             fig_bar.update_layout(
                 barmode="stack",
                 height=450,
@@ -282,9 +337,9 @@ with tab2:
         st.subheader("인터널라이저 상세")
         st.caption("👆 행을 클릭하면 연결 브로커 목록을 확인할 수 있습니다.")
 
-        intl_sorted = intl.nlargest(20, "total_pfof_received_usd").reset_index(drop=True)
+        intl_sorted = intl.nlargest(20, "__sel_total__").reset_index(drop=True)
         tbl2_raw = intl_sorted[["venue_name", "mic", "equity_pfof_usd", "options_pfof_usd",
-                                  "total_pfof_received_usd", "market_share_pct",
+                                  "total_pfof_received_usd", "__sel_share_pct__",
                                   "broker_count", "exclusive_broker_count"]].copy()
 
         event = st.dataframe(
@@ -296,10 +351,10 @@ with tab2:
                 "mic":                    st.column_config.TextColumn("MIC"),
                 "equity_pfof_usd":        st.column_config.NumberColumn("Equity PFOF", format="$%.0f"),
                 "options_pfof_usd":       st.column_config.NumberColumn("Options PFOF", format="$%.0f"),
-                "total_pfof_received_usd": st.column_config.NumberColumn("Total PFOF", format="$%.0f"),
-                "market_share_pct":       st.column_config.NumberColumn("시장점유율%", format="%.2f%%"),
-                "broker_count":           st.column_config.NumberColumn("브로커수"),
-                "exclusive_broker_count": st.column_config.NumberColumn("독점브로커수"),
+                "total_pfof_received_usd": st.column_config.NumberColumn("Total PFOF(전체)", format="$%.0f"),
+                "__sel_share_pct__":      st.column_config.NumberColumn(f"시장점유율% ({sel_label})", format="%.2f%%"),
+                "broker_count":           st.column_config.NumberColumn("브로커수(전체)"),
+                "exclusive_broker_count": st.column_config.NumberColumn("독점브로커수(전체)"),
             },
             use_container_width=True,
             hide_index=True,
@@ -375,7 +430,9 @@ with tab3:
 > 음수가 클수록 거래소가 주문 유치를 위해 더 많이 지불하는 것 → 경쟁이 치열한 거래소.
         """)
     oe = data["options_exch"]
-    if oe.empty:
+    if not show_options:
+        st.info("사이드바에서 Options가 꺼져 있어 이 탭은 비활성화됨 (옵션 전용 데이터). Options를 켜면 표시됨.")
+    elif oe.empty:
         st.info("데이터 없음")
     else:
         oe_active = oe[oe["broker_count"] > 0].copy()
@@ -473,7 +530,10 @@ with tab4:
             margin=dict(l=10, r=10, t=10, b=60),
         )
         st.plotly_chart(fig_hm, use_container_width=True)
-        st.caption("값 = 해당 브로커가 해당 인터널라이저로 라우팅하는 평균 주문 비율(%)")
+        st.caption(
+            "값 = 해당 브로커가 해당 인터널라이저로 라우팅하는 평균 주문 비율(%) · "
+            "이 매트릭스는 원본 데이터 구조상 Equity+Options 합산 기준이라 사이드바 토글이 적용되지 않음"
+        )
 
 
 # ════════════════════════════════════════════════════════════════
@@ -498,9 +558,14 @@ MoM(Month-over-Month) 증감률로 브로커별 거래량 모멘텀을 파악할
     if mon.empty:
         st.info("데이터 없음")
     else:
-        # 기본: 총 PFOF 상위 10개 브로커
+        mon = mon.copy()
+        mon["__sel_total__"] = selected_total(
+            mon, "pfof_equity_usd", "pfof_options_usd", show_equity, show_options
+        )
+
+        # 기본: 선택된 카테고리(Equity/Options) 합산 상위 10개 브로커
         top10_names = (
-            mon.groupby("broker_name")["pfof_total_usd"]
+            mon.groupby("broker_name")["__sel_total__"]
             .sum()
             .nlargest(10)
             .index.tolist()
@@ -514,14 +579,19 @@ MoM(Month-over-Month) 증감률로 브로커별 거래량 모멘텀을 파악할
         if selected_brokers:
             mon_sel = mon[mon["broker_name"].isin(selected_brokers)].copy()
             mon_sel["month_label"] = mon_sel["month"].map({1: "Jan", 2: "Feb", 3: "Mar"})
+            mon_sel = mon_sel.sort_values(["broker_name", "month"])
+            # MoM도 선택된 카테고리 합산 기준으로 재계산
+            mon_sel["__sel_mom_pct__"] = (
+                mon_sel.groupby("broker_name")["__sel_total__"].pct_change() * 100
+            )
 
             col_a, col_b = st.columns(2)
             with col_a:
-                st.subheader("월별 Total PFOF")
+                st.subheader(f"월별 PFOF · {sel_label}")
                 fig_line = px.line(
                     mon_sel,
                     x="month_label",
-                    y="pfof_total_usd",
+                    y="__sel_total__",
                     color="broker_name",
                     markers=True,
                     category_orders={"month_label": ["Jan", "Feb", "Mar"]},
@@ -537,14 +607,12 @@ MoM(Month-over-Month) 증감률로 브로커별 거래량 모멘텀을 파악할
 
             with col_b:
                 st.subheader("전월 대비 증감률 (%)")
-                mon_mom = mon_sel[mon_sel["mom_change_pct"].notna() & (mon_sel["mom_change_pct"] != "")]
+                mon_mom = mon_sel[mon_sel["__sel_mom_pct__"].notna()]
                 if not mon_mom.empty:
-                    mon_mom = mon_mom.copy()
-                    mon_mom["mom_change_pct"] = pd.to_numeric(mon_mom["mom_change_pct"], errors="coerce")
                     fig_mom = px.bar(
                         mon_mom,
                         x="month_label",
-                        y="mom_change_pct",
+                        y="__sel_mom_pct__",
                         color="broker_name",
                         barmode="group",
                         category_orders={"month_label": ["Feb", "Mar"]},
@@ -564,8 +632,12 @@ MoM(Month-over-Month) 증감률로 브로커별 거래량 모멘텀을 파악할
             # 테이블
             st.subheader("월별 상세")
             tbl5 = mon_sel[["broker_name", "month_label", "pfof_equity_usd",
-                              "pfof_options_usd", "pfof_total_usd", "mom_change_pct"]].copy()
-            for col in ["pfof_equity_usd", "pfof_options_usd", "pfof_total_usd"]:
+                              "pfof_options_usd", "__sel_total__", "__sel_mom_pct__"]].copy()
+            for col in ["pfof_equity_usd", "pfof_options_usd", "__sel_total__"]:
                 tbl5[col] = tbl5[col].apply(fmt_usd)
-            tbl5.columns = ["브로커", "월", "Equity PFOF", "Options PFOF", "Total PFOF", "MoM(%)"]
+            tbl5["__sel_mom_pct__"] = tbl5["__sel_mom_pct__"].apply(
+                lambda v: f"{v:.1f}%" if pd.notna(v) else "-"
+            )
+            tbl5.columns = ["브로커", "월", "Equity PFOF", "Options PFOF",
+                             f"선택 합계({sel_label})", "MoM(%)"]
             st.dataframe(tbl5, use_container_width=True, hide_index=True)
